@@ -70,7 +70,7 @@ permalink: "index.html"
 				<h3 class="section-title">Últimos Retos Creados</h3>
 			</div>
 			{% for desafio in collections.desafios %}
-			<div class="col-md-4">
+			<div class="col-md-4 my-2">
                 <div class="card challenge-card">
 					<a href="{{desafio.url}}">
 					<img src="{{desafio.data.image}}" class="card-img-top" alt="Reto 1">
@@ -87,7 +87,7 @@ permalink: "index.html"
 			{% endfor %}
 			<div class="col-lg-12 col-sm-11">
 				<div class="text-center mt-4">
-					<a href="#" class="btn btn-primary">Ver todos los Retos</a>
+					<a href="/desafios/index.html" class="btn btn-primary">Ver todos los Retos</a>
 				</div>
 			</div>
         </div>
