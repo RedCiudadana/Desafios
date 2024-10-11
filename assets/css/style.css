@@ -20,7 +20,7 @@ body {
 }
 .section-title {
     text-align: center;
-    margin: 5rem 0 ;
+    margin: 2rem 0 5rem 0 ;
 }
 .info-icons .col-md-3 {
     text-align: center;
@@ -55,6 +55,16 @@ body {
 
 .my-ct{
     margin: 5rem 0;
+}
+
+.btn-primary{
+    background-color: #191a28;
+}
+
+.btn-primary:hover{
+    border: 1px solid #191a28;
+    background-color: #fff;
+    color: #191a28;
 }
 
 footer {
