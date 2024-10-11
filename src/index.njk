@@ -5,7 +5,7 @@ permalink: "index.html"
 {% extends "src/base.njk" %}
 
 {% block head %}
-<title>Desafíos | Red Ciudadana</title>
+<title>Desafíos Ciudadanos: Innovación y Soluciones Colaborativa | Red Ciudadana</title>
 
 {% endblock %}
 
@@ -13,20 +13,22 @@ permalink: "index.html"
 	<!-- Hero Section -->
     <div class="hero">
         <h1>Desafíos</h1>
-        <p>Innovación abierta para resolver problemas públicos</p>
-        <a href="#" class="btn btn-light">¡Quiero Participar!</a>
+		<div class="d-flex my-5 justify-content-center">
+			<a href="/desafios/index.html" class="btn btn-light mx-4">Participa Ahora</a>
+			<a href="#" class="btn btn-light mx-4">Metodología</a>
+		</div>
     </div>
 
     <!-- Info Section -->
     <div class="container">
         <div class="row section-title">
             <div class="col-md-6">
-                <h3>¿Qué es un reto?</h3>
-                <p>Una convocatoria en línea con la comunidad tecnológica de México para idear e implementar soluciones tecnológicas a un problema público.</p>
+                <h3>¿Qué es un Desafío Ciudadano?</h3>
+                <p>Un <b>Desafío Ciudadano</b> es una convocatoria en línea abierta a toda la comunidad para proponer e implementar soluciones innovadoras a problemas sociales críticos, como la migración, la salud y la educación. Estos desafíos buscan aprovechar el talento y la creatividad de ciudadanos, tecnólogos, activistas y expertos en diversas áreas para generar un impacto real en las comunidades.				</p>
             </div>
             <div class="col-md-6">
                 <h3>¿Quién puede participar?</h3>
-                <p>Ingenieros, tecnólogos, educadores, científicos, diseñadores, activistas, cualquiera que tenga una idea de solución y las habilidades para implementarla.</p>
+                <p>Ingenieros, Tecnólogos, Ciudadanos comprometidos, Científicos, Diseñadores, Activistas y cualquiera que tenga una idea de solución y las habilidades para implementarla.</p>
             </div>
         </div>
     </div>
@@ -37,25 +39,25 @@ permalink: "index.html"
             <div class="col-md-3">
 				<div class="info-icons-circle">
 					<i class="fas fa-bullhorn"></i>
-					<p>1. Se abre la convocatoria</p>
+					<h5>1. Convocatoria</h5>
 				</div>
             </div>
             <div class="col-md-3">
 				<div class="info-icons-circle">
 					<i class="fas fa-file-alt"></i>
-                	<p>2. Se evalúan propuestas</p>
+                	<h5>2. Propuesta de Soluciones</h5>
 				</div>
             </div>
             <div class="col-md-3">
 				<div class="info-icons-circle">
 					<i class="fas fa-cogs"></i>
-                	<p>3. Se evalúan prototipos</p>
+                	<h5>3. Prototipado</h5>
 				</div>        
             </div>
             <div class="col-md-3">
 				<div class="info-icons-circle">
 					<i class="fas fa-trophy"></i>
-                	<p>4. Se definen ganadores</p>
+                	<h5>4. Selección de Ganadores</h5>
 				</div>             
             </div>
         </div>
@@ -63,30 +65,26 @@ permalink: "index.html"
 
     <!-- Latest Challenges Section -->
     <div class="container">
-		<div class="row my-ct">
+		<div class="row my-ct justify-content-center">
 			<div class="col-lg-12 col-sm-11">
 				<h3 class="section-title">Últimos Retos Creados</h3>
 			</div>
-			<div class="col-md-6">
+			{% for desafio in collections.desafios %}
+			<div class="col-md-4">
                 <div class="card challenge-card">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Reto 1">
+					<a href="{{desafio.url}}">
+					<img src="{{desafio.data.image}}" class="card-img-top" alt="Reto 1">
                     <div class="card-body">
-                        <h5 class="card-title">Hackatón por los Derechos de la Niñez y la Adolescencia en México, 2024</h5>
-                        <p class="card-text">Red por los Derechos de la Infancia México</p>
-                        <p class="card-text"><small>Fase 4: Concluido | Vence: Abril 28, 2024 | 64 participantes</small></p>
+                        <h5 class="card-title">{{desafio.data.title}}</h5>
+                        <p class="card-text">{{desafio.data.description | rmj | safe}}</p>
+                        <p class="card-text">
+							<b>Fecha Límite: {{desafio.data.date | dateFormat('DD/MM/YYYY')}}</b>
+						</p>
                     </div>
+					</a>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card challenge-card">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Reto 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Datatón sobre niñez y adolescencia en México, 2023</h5>
-                        <p class="card-text">Red por los Derechos de la Infancia México</p>
-                        <p class="card-text"><small>Fase 4: Concluido | Vence: Marzo 04, 2023 | 80 participantes</small></p>
-                    </div>
-                </div>
-            </div>
+			{% endfor %}
 			<div class="col-lg-12 col-sm-11">
 				<div class="text-center mt-4">
 					<a href="#" class="btn btn-primary">Ver todos los Retos</a>

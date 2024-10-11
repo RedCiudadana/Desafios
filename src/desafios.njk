@@ -1,0 +1,52 @@
+---
+permalink: "desafios/index.html"
+---
+
+{% extends "src/base.njk" %}
+
+{% block head %}
+<title>Desafíos Ciudadanos: Innovación y Soluciones Colaborativa | Red Ciudadana</title>
+
+{% endblock %}
+
+{% block content %}
+	<!-- Hero Section -->
+    <div class="hero">
+        <h1>Desafíos</h1>
+    </div>
+
+    <!-- Latest Challenges Section -->
+    <div class="container">
+		<div class="row my-ct justify-content-center">
+			<div class="col-lg-12 col-sm-11">
+				<h3 class="section-title">Últimos Retos Creados</h3>
+			</div>
+			{% for desafio in collections.desafios %}
+			<div class="col-md-4">
+                <div class="card challenge-card">
+					<a href="{{desafio.url}}">
+					<img src="{{desafio.data.image}}" class="card-img-top" alt="Reto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">{{desafio.data.title}}</h5>
+                        <p class="card-text">{{desafio.data.description | rmj | safe}}</p>
+                        <p class="card-text">
+							<b>Fecha Límite: {{desafio.data.date | dateFormat('DD/MM/YYYY')}}</b>
+						</p>
+                    </div>
+					</a>
+                </div>
+            </div>
+			{% endfor %}
+			<div class="col-lg-12 col-sm-11">
+				<div class="text-center mt-4">
+					<a href="#" class="btn btn-primary">Ver todos los Retos</a>
+				</div>
+			</div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block body_javascripts %}
+	
+{% endblock %}

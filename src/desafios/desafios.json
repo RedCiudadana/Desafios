@@ -1,0 +1,5 @@
+{
+    "tags": "desafios",
+    "permalink": "desafios/{{ page.fileSlug }}/index.html",
+    "layout": "layouts/desafio.njk"
+}
