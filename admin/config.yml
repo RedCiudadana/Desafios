@@ -17,7 +17,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { name: "title", label: "Título" }
       - { label: "Image", name: "image", widget: "image" }
-      - { name: "description", label: "Descripción" }
+      - { name: "description", label: "Descripción", widget: "markdown" }
       - { name: "objetivos", label: "Objetivos", widget: "markdown" }
       - { name: "premio", label: "Premio", widget: "number" }
       - { name: "criterios", label: "Criterios de Evaluación", widget: "markdown" }
