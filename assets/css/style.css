@@ -107,6 +107,16 @@ a:hover{
     margin: 4rem 0;
 }
 
+@media only screen and (max-width: 900px) {
+    .my-ct {
+        margin: 2rem 0;
+    }
+
+    .my-ct2 {
+        margin: 1rem 0;
+    }
+}
+
 .btn-primary{
     background-color: #191a28;
 }
