@@ -9,7 +9,8 @@
 	============================================= -->
 	<!-- / -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
 
     {% block head %}
     {% endblock %}
@@ -17,16 +18,41 @@
 </head>
 
 <body class="stretched search-overlay">
-	
+	<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><img src="/assets/img/slider/slider.png" style="width: 200px; height: auto;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Desafíos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Desafiantes</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
 		
-		{% block content %}
+    {% block content %}
 
-        {% endblock %} 
+    {% endblock %} 
 	
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© Red Ciudadana</p>
+            <p><a href="#">Aviso de privacidad y términos y condiciones</a></p>
+        </div>
+    </footer>
 
     {% block body_javascripts %}
 
     {% endblock %}
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 	<script>
       if (window.netlifyIdentity) {

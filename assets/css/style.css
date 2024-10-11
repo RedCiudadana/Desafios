@@ -1,0 +1,68 @@
+body {
+    background-color: #f2f7fa;
+}
+.navbar {
+    background-color: #191a28;
+    padding: 30px 5%;
+}
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+.hero {
+    background-color: #191a28;
+    color: #ffffff;
+    text-align: center;
+    padding: 300px;
+}
+.hero h1 {
+    font-size: 3rem;
+}
+.section-title {
+    text-align: center;
+    margin: 5rem 0 ;
+}
+.info-icons .col-md-3 {
+    text-align: center;
+    padding: 20px;
+}
+.info-icons i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.info-icons .info-icons-circle{
+    background-color: #191a28;
+    border-radius: 50%;
+    margin: 20px auto;
+    color: #fff;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.card{
+    height: 100%;
+}
+
+.challenge-card img {
+    width: 100%;
+    height: auto;
+}
+
+.my-ct{
+    margin: 5rem 0;
+}
+
+footer {
+    background-color: #191a28;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+footer a {
+    color: #ffffff;
+}

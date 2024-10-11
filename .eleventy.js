@@ -5,6 +5,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.setTemplateFormats("njk,html,md");
     
     eleventyConfig.addPassthroughCopy('src');
+    eleventyConfig.addPassthroughCopy('assets');
     eleventyConfig.addPassthroughCopy('admin');
 
     eleventyConfig.addNunjucksFilter("rmj", function(content) {
