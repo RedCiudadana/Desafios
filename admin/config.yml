@@ -18,9 +18,9 @@ collections:
       - { name: "title", label: "Título" }
       - { label: "Image", name: "image", widget: "image" }
       - { name: "description", label: "Descripción" }
-      - { name: "objetivos", label: "Objetivos", widget: "list" }
+      - { name: "objetivos", label: "Objetivos", widget: "markdown" }
       - { name: "premio", label: "Premio", widget: "number" }
-      - { name: "criterios", label: "Criterios de Evaluación", widget: "list" }
+      - { name: "criterios", label: "Criterios de Evaluación", widget: "markdown" }
       - { name: "date", label: "Fecha Límite", widget: "datetime" }
       - { name: "link", label: "Link de Participación" }
       - {
