@@ -1,0 +1,33 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# publish_mode: editorial_workflow
+media_folder: "images/posts" # Media files will be stored in the repo under src/assets/images/posts
+public_folder: "/images/posts" # The src attribute for uploaded media will begin with assets/images/posts
+
+collections:
+  - name: "deasafios" # Used in routes, e.g., /admin/collections/blog
+    label: "Desafíos" # Used in the UI
+    folder: "src/desafios" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Título" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { name: "description", label: "Descripción" }
+      - { name: "objetivos", label: "Objetivos", widget: "list" }
+      - { name: "premio", label: "Premio", widget: "number" }
+      - { name: "criterios", label: "Criterios de Evaluación", widget: "list" }
+      - { name: "date", label: "Fecha Límite", widget: "datetime" }
+      - { name: "link", label: "Link de Participación" }
+      - {
+          name: "highlight",
+          label: "Highlight",
+          widget: "boolean",
+          default: false,
+          hint: "Display posts in home's highlights",
+        }
+show_preview_links: true
