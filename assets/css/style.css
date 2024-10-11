@@ -23,6 +23,18 @@ a:hover{
 .hero h1 {
     font-size: 3rem;
 }
+
+.hero2 {
+    background-color: #191a28;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px;
+}
+
+.hero2 h1 {
+    font-size: 3rem;
+}
+
 .section-title {
     text-align: center;
     margin: 2rem 0 5rem 0 ;
@@ -109,4 +121,23 @@ footer {
 }
 footer a {
     color: #ffffff;
+}
+
+
+.contact_form{
+    width: 100%;
+  }
+  
+.contact_form input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 0.5px solid #ccc;
+}
+
+.contact_form textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 0.5px solid #ccc;
 }
