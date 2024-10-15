@@ -1,3 +1,47 @@
+@font-face {
+    font-family: "Titulos-Bold";
+  
+    src: url("/assets/fonts/titulo/Sora-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Titulos-Semibold";
+  
+    src: url("/assets/fonts/titulo/Sora-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Titulos-Regular";
+  
+    src: url("/assets/fonts/titulo/Sora-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Cuerpos-Bold";
+  
+    src: url("/assets/fonts/texto/EuclidCircularA-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Cuerpos-Semibold";
+  
+    src: url("/assets/fonts/texto/EuclidCircularA-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Cuerpos-Regular";
+  
+    src: url("/assets/fonts/texto/EuclidCircularA-Regular.ttf");
+} 
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Titulos-Bold', sans-serif;
+}
+
+a, p, span{
+    font-family: 'Cuerpos-Regular', sans-serif;
+}
+
 body {
     background-color: #f2f7fa;
 }
@@ -7,7 +51,7 @@ a:hover{
 }
 
 .navbar {
-    background-color: #191a28;
+    background-color: #033250;
     padding: 30px 5%;
 }
 .navbar-brand,
@@ -15,17 +59,18 @@ a:hover{
     color: #ffffff;
 }
 .hero {
-    background-color: #191a28;
+    background-color: #033250;
     color: #ffffff;
     text-align: center;
-    padding: 300px;
+    padding: 30px;
+    width: 100%;
 }
 .hero h1 {
     font-size: 3rem;
 }
 
 .hero2 {
-    background-color: #191a28;
+    background-color: #033250;
     color: #ffffff;
     text-align: center;
     padding: 50px;
@@ -59,7 +104,7 @@ a:hover{
 }
 
 .info-icons .info-icons-circle{
-    background-color: #191a28;
+    background-color: #033250;
     border-radius: 50%;
     margin: 20px auto;
     color: #fff;
@@ -86,7 +131,8 @@ a:hover{
 }
 
 .card-body{
-    color: #191a28;
+    padding: 50px;
+    color: #033250;
     margin-bottom: 20px;
 }
 
@@ -107,6 +153,22 @@ a:hover{
     margin: 4rem 0;
 }
 
+.mt-ct{
+    margin-top: 6rem!important;
+}
+
+.py-ct{
+    padding: 5rem 0;
+}
+
+.py-ct2{
+    padding: 4rem 0;
+}
+
+.pt-ct{
+    padding-top: 6rem!important;
+}
+
 @media only screen and (max-width: 900px) {
     .my-ct {
         margin: 2rem 0;
@@ -115,16 +177,42 @@ a:hover{
     .my-ct2 {
         margin: 1rem 0;
     }
+
+    .py-ct {
+        padding: 2rem 0;
+    }
+
+    .py-ct2 {
+        padding: 1rem 0;
+    }
 }
 
 .btn-primary{
-    background-color: #191a28;
+    background-color: #033250;
+    padding: 10px 50px;
+    border-radius: 20px;
+    color: #fff;
+    transition:all ease 0.5s;
+    border-color: #fff;
 }
 
 .btn-primary:hover{
-    border: 1px solid #191a28;
     background-color: #fff;
-    color: #191a28;
+    color: #212529;
+    border-color: #033250;
+}
+
+.btn-primary-light{
+    background-color: #fff;
+    padding: 10px 50px;
+    border-radius: 20px;
+    color: #212529;
+    transition:all ease 0.5s;
+}
+
+.btn-primary-light:hover{
+    background-color: #a3d1e9;
+    color: #212529;
 }
 
 .bg-white-ct{
@@ -133,6 +221,11 @@ a:hover{
     padding: 2rem;
 }
 
+.bg-blue-ct{
+    background-color: #a3d1e9;
+    border-radius: 10px;
+    padding: 2rem;
+}
 
 .contact_form{
     width: 100%;
@@ -153,7 +246,7 @@ a:hover{
 }
 
 footer {
-    background-color: #191a28;
+    background-color: #033250;
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
@@ -186,4 +279,32 @@ footer a {
 .preloader img.jump {
     max-height: 100px;
     max-width: 100px;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 90%!important;
+    }
+}
+
+.img-explicativo{
+    width: 150px;
+    height: auto;
+    margin: auto;
+    margin: 20px 0;
+}
+
+.img-explicativo2{
+    width: 250px;
+    height: auto;
+    margin: auto;
+    margin: 20px 0;
+}
+
+.centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
