@@ -169,6 +169,10 @@ a:hover{
     padding-top: 6rem!important;
 }
 
+.d-flex-ct{
+    display: flex;
+}
+
 @media only screen and (max-width: 900px) {
     .my-ct {
         margin: 2rem 0;
@@ -184,6 +188,10 @@ a:hover{
 
     .py-ct2 {
         padding: 1rem 0;
+    }
+
+    .d-flex-ct{
+        display: block;
     }
 }
 

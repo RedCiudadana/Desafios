@@ -23,6 +23,7 @@ collections:
       - { name: "criterios", label: "Criterios de Evaluación", widget: "markdown" }
       - { name: "date", label: "Fecha Límite", widget: "datetime" }
       - { name: "link", label: "Link de Participación" }
+      - { name: "link2", label: "Link de Detalles" }
       - {
           name: "highlight",
           label: "Highlight",

@@ -10,12 +10,15 @@
     <div class="container">
         <div class="row my-ct bg-white-ct">
             <div class="col-md-4 my-2">
-                <img src="{{image}}">
+                <img class="w-100" src="{{image}}">
             </div>
-            <div class="col-md-8 my-2">
+            <div class="col-md-8 my-2" style="padding: 0 5%;">
                 <h2>{{title}}</h2>
                 <p>{{description | rmj |safe}}</p>
-                <a href="{{liink}}" class="btn btn-primary">Descarga los Detalles</a>
+                <div class="d-flex-ct">
+                    <a href="{{liink}}" class="btn btn-primary" style="margin-right: 20px;">Descarga los Detalles</a>
+                    <a href="{{liink}}" class="btn btn-primary">Participa</a>
+                </div>
             </div>
         </div>
     </div>
