@@ -32,7 +32,7 @@ criterios: |-
   * Potencial para escalar a nivel nacional o en otros países.
 
   <!--EndFragment-->
-date: 2024-12-15T18:00:26.995Z
+date: 2024-11-24T18:00:26.995Z
 link: https://redciudadana.org/
 link2: https://redciudadana.org/
 highlight: true
