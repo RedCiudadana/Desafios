@@ -21,8 +21,8 @@ objetivos: >-
 
 
   <!--EndFragment-->
-premio: " $5,000 USD en capital semilla y apoyo técnico para desarrollar e
-  implementar la plataforma."
+premio: Presentación con autoridades de SEGEPLAN, y apoyo técnico para
+  desarrollar e implementar la plataforma.
 criterios: |-
   <!--StartFragment-->
 
@@ -34,5 +34,6 @@ criterios: |-
   <!--EndFragment-->
 date: 2024-12-15T18:00:26.995Z
 link: https://redciudadana.org/
-highlight: false
+link2: https://redciudadana.org/
+highlight: true
 ---
