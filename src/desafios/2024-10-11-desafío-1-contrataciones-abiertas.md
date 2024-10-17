@@ -21,8 +21,8 @@ objetivos: >-
 
 
   <!--EndFragment-->
-premio: " $5,000 USD en capital semilla y mentoría para desarrollar e
-  implementar la solución."
+premio: Publicación en plataforma de datos y mentoría para desarrollar e
+  implementar la solución.
 criterios: |-
   <!--StartFragment-->
 
@@ -32,7 +32,8 @@ criterios: |-
   * Escalabilidad y posibilidad de replicar en otros sectores.
 
   <!--EndFragment-->
-date: 2024-12-01T05:59:54.705Z
+date: 2024-11-25T05:59:54.705Z
 link: https://redciudadana.org/
-highlight: false
+link2: https://redciudadana.org/
+highlight: true
 ---
