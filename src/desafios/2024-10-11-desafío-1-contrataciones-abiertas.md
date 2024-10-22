@@ -1,6 +1,6 @@
 ---
 title: "Desafío 1: Contrataciones Abiertas"
-image: /images/posts/dc.png
+image: /images/posts/dc-25.png
 description: >-
   <!--StartFragment-->
 
