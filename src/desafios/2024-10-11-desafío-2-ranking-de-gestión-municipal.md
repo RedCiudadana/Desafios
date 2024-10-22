@@ -1,6 +1,6 @@
 ---
 title: "Desafío 2: Ranking de Gestión Municipal"
-image: /images/posts/dc.png
+image: /images/posts/dc-26.png
 description: >-
   <!--StartFragment-->
 
