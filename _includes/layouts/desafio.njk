@@ -24,21 +24,26 @@
     </div>
 
     <!-- Objetivos Section -->
-    <div class="container">
-        <div class="row my-ct2 bg-white-ct">
-            <div class="col-lg-12">
-                <h3>Objetivos</h3>
-                {{objetivos | rmj | safe}}
+    <div class="container px-0">
+        <div class="row my-ct2 ">
+            <div class="col-lg-6 my-2">
+                <div class="bg-white-ct h-100">
+                    <div class="d-flex align-items-center">
+                        <img class="ic-desafio" src="/assets/img/iconos/DC_iconos-02.png">
+                        <h3>Objetivos</h3>
+                    </div>
+                    {{objetivos | rmj | safe}}
+                </div>
             </div>
-        </div>
-    </div>
 
-    <!-- Premio Section -->
-    <div class="container">
-        <div class="row my-ct2 bg-white-ct">
-            <div class="col-lg-12">
-                <h3>Premio</h3>
-                <p>{{premio}}</p>
+            <div class="col-lg-6 my-2">
+                <div class="bg-white-ct h-100">
+                    <div class="d-flex align-items-center">
+                        <img class="ic-desafio" src="/assets/img/iconos/DC_iconos-03.png">
+                        <h3>Premio</h3>
+                    </div>
+                    <p>{{premio}}</p>
+                </div>
             </div>
         </div>
     </div>
@@ -47,8 +52,13 @@
     <div class="container ">
         <div class="row my-ct2 bg-white-ct">
             <div class="col-lg-12">
-                <h3>Criterios de Evaluación</h3>
-                {{objetivos | rmj | safe}}
+                <div class="bg-white-ct">
+                    <div class="d-flex align-items-center">
+                        <img class="ic-desafio" src="/assets/img/iconos/DC_iconos-01.png">
+                        <h3>Criterios de Evaluación</h3>
+                    </div>
+                    {{objetivos | rmj | safe}}
+                </div>
             </div>
         </div>
     </div>

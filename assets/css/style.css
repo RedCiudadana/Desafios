@@ -36,6 +36,7 @@
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Titulos-Bold', sans-serif;
+    color: #123e61;
 }
 
 a, p, span{
@@ -80,6 +81,7 @@ a:hover{
     font-size: 3rem;
 }
 
+
 @media only screen and (max-width: 900px) {
     .hero {
         padding: 10% 5%;
@@ -88,6 +90,7 @@ a:hover{
     .hero2 {
         padding: 10% 5%;
     }
+    
 }
 
 .section-title {
@@ -142,7 +145,8 @@ a:hover{
 
 .card-body p:last-child{
     position: absolute;
-    bottom: 20px;
+    bottom: 35px;
+    color: #39A4DC;
 }
 
 .my-ct{
@@ -205,9 +209,9 @@ a:hover{
 }
 
 .btn-primary:hover{
-    background-color: #fff;
+    background-color: #A3D0E8;
     color: #212529;
-    border-color: #033250;
+    border-color: #A3D0E8;
 }
 
 .btn-primary-light{
@@ -230,7 +234,7 @@ a:hover{
 }
 
 .bg-blue-ct{
-    background-color: #a3d1e9;
+    background-color: #39A4DC;
     border-radius: 10px;
     padding: 2rem;
 }
@@ -315,4 +319,9 @@ footer a {
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+.ic-desafio{
+    margin-bottom: 20px;
+    margin-right: 15px;
 }
