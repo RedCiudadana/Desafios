@@ -32,7 +32,7 @@ criterios: |-
   * Escalabilidad y posibilidad de replicar en otros sectores.
 
   <!--EndFragment-->
-date: 2024-11-25T05:59:54.705Z
+date: 2025-02-03T05:59:54.705Z
 link: https://redciudadana.org/
 link2: https://redciudadana.org/
 highlight: true
