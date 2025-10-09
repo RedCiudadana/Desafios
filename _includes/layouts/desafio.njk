@@ -394,28 +394,6 @@
     </div>
     {% endif %}
 
-    <!-- Related Challenges -->
-    <div class="container my-5">
-        <h2 class="text-center mb-4">Otros Desafíos Activos</h2>
-        <div class="row">
-            {% for desafio in collections.desafios | limit(3) %}
-            {% if desafio.data.title != title %}
-            <div class="col-md-4 mb-4">
-                <div class="card challenge-card">
-                    <a href="{{desafio.url}}">
-                        <img src="{{desafio.data.image}}" class="card-img-top" alt="{{desafio.data.title}}">
-                        <div class="card-body">
-                            <h5 class="card-title">{{desafio.data.title}}</h5>
-                            <p class="card-text">{{desafio.data.description | rmj | safe | truncate(150)}}</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            {% endif %}
-            {% endfor %}
-        </div>
-    </div>
-
 {% endblock %}
 
 {% block body_javascripts %}
