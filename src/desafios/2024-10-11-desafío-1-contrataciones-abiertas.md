@@ -36,6 +36,7 @@ date: 2025-02-03T05:59:54.705Z
 link: https://redciudadana.org/
 link2: https://redciudadana.org/
 highlight: true
+status: finished
 stage1_videos:
   - url: https://www.youtube.com/embed/3JZ_D3ELwOQ
     title: "Propuesta 1: Plataforma de Monitoreo Ciudadano"

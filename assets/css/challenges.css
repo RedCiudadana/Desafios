@@ -590,3 +590,50 @@
     height: auto;
     display: block;
 }
+
+/* Finished Challenge Badge */
+.finished-challenge {
+    position: relative;
+    opacity: 0.85;
+}
+
+.finished-badge {
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transform: rotate(0deg);
+}
+
+.finished-badge i {
+    font-size: 16px;
+}
+
+.hero-finished-badge {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+}
+
+.hero-finished-badge i {
+    font-size: 24px;
+}

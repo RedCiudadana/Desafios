@@ -36,6 +36,7 @@ date: 2025-02-02T18:00:26.995Z
 link: https://redciudadana.org/
 link2: https://redciudadana.org/
 highlight: true
+status: finished
 stage1_videos:
   - url: https://www.youtube.com/embed/videoseries?list=PLrAXtmErZgOeiKm4sgNOknGvNjby9efdf
     title: "Propuesta 1: Sistema de Ranking Municipal"

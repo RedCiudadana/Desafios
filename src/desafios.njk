@@ -29,7 +29,13 @@ permalink: "desafios/index.html"
 				</div>
 				{% for desafio in collections.desafios %}
 				<div class="col-md-4 col-sm-6 my-3">
-					<div class="card challenge-card">
+					<div class="card challenge-card {% if desafio.data.status == 'finished' %}finished-challenge{% endif %}">
+						{% if desafio.data.status == 'finished' %}
+						<div class="finished-badge">
+							<i class="fa-solid fa-check-circle"></i>
+							<span>DESAFÍO FINALIZADO</span>
+						</div>
+						{% endif %}
 						<a href="{{desafio.url}}">
 						<img src="{{desafio.data.image}}" class="card-img-top" alt="Reto 1">
 						<div class="card-body">
