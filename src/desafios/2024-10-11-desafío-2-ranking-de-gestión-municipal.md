@@ -37,6 +37,10 @@ link: https://redciudadana.org/
 link2: https://redciudadana.org/
 highlight: true
 status: finished
+tags:
+  - Gestión Municipal
+  - Rendición de Cuentas
+  - Datos Abiertos
 stage1_videos:
   - url: https://www.youtube.com/embed/videoseries?list=PLrAXtmErZgOeiKm4sgNOknGvNjby9efdf
     title: "Propuesta 1: Sistema de Ranking Municipal"

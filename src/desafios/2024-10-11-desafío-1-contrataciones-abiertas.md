@@ -37,6 +37,10 @@ link: https://redciudadana.org/
 link2: https://redciudadana.org/
 highlight: true
 status: finished
+tags:
+  - Transparencia
+  - Gobierno Abierto
+  - Datos Abiertos
 stage1_videos:
   - url: https://www.youtube.com/embed/3JZ_D3ELwOQ
     title: "Propuesta 1: Plataforma de Monitoreo Ciudadano"

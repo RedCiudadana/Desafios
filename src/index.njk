@@ -69,22 +69,66 @@ permalink: "index.html"
                 <div class="col-lg-12 col-sm-11">
                     <h3 class="section-title">Últimos Retos Creados</h3>
                 </div>
+
+                <!-- Filter Buttons -->
+                <div class="col-lg-12 col-sm-11 mb-4">
+                    <div class="challenge-filters">
+                        <button class="filter-btn active" data-filter="all">
+                            <i class="fa-solid fa-layer-group"></i> Todos
+                        </button>
+                        <button class="filter-btn" data-filter="Transparencia">
+                            <i class="fa-solid fa-eye"></i> Transparencia
+                        </button>
+                        <button class="filter-btn" data-filter="Gobierno Abierto">
+                            <i class="fa-solid fa-building-columns"></i> Gobierno Abierto
+                        </button>
+                        <button class="filter-btn" data-filter="Datos Abiertos">
+                            <i class="fa-solid fa-database"></i> Datos Abiertos
+                        </button>
+                        <button class="filter-btn" data-filter="Inteligencia Artificial">
+                            <i class="fa-solid fa-brain"></i> IA
+                        </button>
+                        <button class="filter-btn" data-filter="Inclusión Digital">
+                            <i class="fa-solid fa-users"></i> Inclusión Digital
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Challenge Cards -->
                 {% for desafio in collections.desafios %}
-                <div class="col-md-4 col-sm-6 my-3">
-                    <div class="card challenge-card">
+                <div class="col-md-4 col-sm-6 my-3 challenge-item" data-tags="{% for tag in desafio.data.tags %}{{tag}}{% if not loop.last %},{% endif %}{% endfor %}">
+                    <div class="card challenge-card-home {% if desafio.data.status == 'finished' %}finished-challenge{% endif %}">
+                        {% if desafio.data.status == 'finished' %}
+                        <div class="finished-badge-small">
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span>FINALIZADO</span>
+                        </div>
+                        {% endif %}
                         <a href="{{desafio.url}}">
-                        <img src="{{desafio.data.image}}" class="card-img-top" alt="Reto 1">
+                        <img src="{{desafio.data.image}}" class="card-img-top" alt="{{desafio.data.title}}">
                         <div class="card-body">
+                            <div class="challenge-tags">
+                                {% for tag in desafio.data.tags %}
+                                <span class="tag">{{tag}}</span>
+                                {% endfor %}
+                            </div>
                             <h5 class="card-title">{{desafio.data.title}}</h5>
-                            <p class="card-text">{{desafio.data.description | rmj | safe}}</p>
-                            <p class="card-text">
-                                <b>Fecha Límite: {{desafio.data.date | dateFormat('DD/MM/YYYY')}}</b>
-                            </p>
+                            <p class="card-text-excerpt">{{desafio.data.description | rmj | striptags | truncate(120)}}</p>
+                            <div class="card-footer-info">
+                                <div class="deadline-info">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <span>{{desafio.data.date | dateFormat('DD/MM/YYYY')}}</span>
+                                </div>
+                                {% if desafio.data.status != 'finished' %}
+                                <span class="status-badge active-badge">Activo</span>
+                                {% endif %}
+                            </div>
                         </div>
                         </a>
                     </div>
                 </div>
                 {% endfor %}
+
                 <div class="col-lg-12 col-sm-11">
                     <div class="text-center mt-4">
                         <a href="/desafios/index.html" class="btn btn-primary-light">Ver todos los Retos</a>
@@ -97,5 +141,35 @@ permalink: "index.html"
 {% endblock %}
 
 {% block body_javascripts %}
-	
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const challengeItems = document.querySelectorAll('.challenge-item');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
+
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+
+            challengeItems.forEach(item => {
+                if (filter === 'all') {
+                    item.style.display = 'block';
+                    setTimeout(() => item.classList.add('fade-in'), 10);
+                } else {
+                    const tags = item.getAttribute('data-tags');
+                    if (tags && tags.includes(filter)) {
+                        item.style.display = 'block';
+                        setTimeout(() => item.classList.add('fade-in'), 10);
+                    } else {
+                        item.classList.remove('fade-in');
+                        item.style.display = 'none';
+                    }
+                }
+            });
+        });
+    });
+});
+</script>
 {% endblock %}

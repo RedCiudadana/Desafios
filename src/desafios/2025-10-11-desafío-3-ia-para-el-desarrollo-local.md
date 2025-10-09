@@ -26,6 +26,10 @@ link: https://redciudadana.org/
 link2: https://redciudadana.org/
 highlight: true
 sponsors_image: /assets/img/banners/Logo para banners y reportes oficiales PNUD (2).png
+tags:
+  - Inteligencia Artificial
+  - Inclusión Digital
+  - Desarrollo Local
 stage1_videos:
   - url: https://www.youtube.com/embed/3JZ_D3ELwOQ
     title: "Propuesta 1: Chatbot Municipal Inclusivo"
