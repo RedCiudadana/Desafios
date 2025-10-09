@@ -108,7 +108,25 @@
 .text_footer_2 {
     font-size: 18px;
     color: #000;
+    margin-bottom: 8px;
+}
+
+.text_footer_3 {
+    font-size: 14px;
+    color: #666;
     margin-bottom: 0;
+}
+
+.text_footer_3 a {
+    color: #39A4DC;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.text_footer_3 a:hover {
+    color: #123e61;
+    text-decoration: underline;
 }
 
 /* Responsive Styles */
@@ -180,6 +198,10 @@
     .text_footer_2 {
         font-size: 14px;
     }
+
+    .text_footer_3 {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -209,5 +231,9 @@
 
     .text_footer_2 {
         font-size: 13px;
+    }
+
+    .text_footer_3 {
+        font-size: 11px;
     }
 }
