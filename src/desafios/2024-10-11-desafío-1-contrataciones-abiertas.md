@@ -5,7 +5,7 @@ description: >-
   <!--StartFragment-->
 
 
-  El acceso a la información pública es clave para mejorar la transparencia en la gestión pública. Este desafío busca soluciones tecnológicas innovadoras que faciliten la **visualización y monitoreo de las contrataciones públicas** en Guatemala, utilizando el **Estándar de Datos para las Contrataciones Abiertas (OCDS)**. El objetivo es proporcionar a los ciudadanos herramientas fáciles de usar que promuevan la **rendición de cuentas** y permitan detectar irregularidades en los procesos de contratación.
+  El acceso a la información pública es clave para mejorar la transparencia en la gestión pública. Este desafío busca soluciones tecnológicas innovadoras que faciliten la **visualización y monitoreo de las contrataciones públicas** en Guatemala, utilizando el **Estándar de Datos para las Contrataciones Abiertas (OCDS)**. El objetivo es proporcionar a los ciudadanos herramientas fáciles de usar que promuevan la **rendición de cuentas** y permitan detectar irregularidades en los procesos de contratación.
 
 
   <!--EndFragment-->
@@ -13,11 +13,11 @@ objetivos: >-
   <!--StartFragment-->
 
 
-  * Desarrollar una plataforma o aplicación que permita a los ciudadanos **monitorear en tiempo real** las contrataciones públicas.
+  * Desarrollar una plataforma o aplicación que permita a los ciudadanos **monitorear en tiempo real** las contrataciones públicas.
 
-  * Facilitar el acceso a datos abiertos y visualización clara de **contratos gubernamentales**.
+  * Facilitar el acceso a datos abiertos y visualización clara de **contratos gubernamentales**.
 
-  * Fomentar el uso de alertas tempranas o **banderas rojas** para identificar posibles riesgos de corrupción o mal manejo de fondos.
+  * Fomentar el uso de alertas tempranas o **banderas rojas** para identificar posibles riesgos de corrupción o mal manejo de fondos.
 
 
   <!--EndFragment-->
@@ -36,4 +36,14 @@ date: 2025-02-03T05:59:54.705Z
 link: https://redciudadana.org/
 link2: https://redciudadana.org/
 highlight: true
+stage1_videos:
+  - url: https://www.youtube.com/embed/dQw4w9WgXcQ
+    title: "Propuesta 1: Plataforma de Monitoreo Ciudadano"
+  - url: https://www.youtube.com/embed/dQw4w9WgXcQ
+    title: "Propuesta 2: App Móvil de Transparencia"
+stage3_videos:
+  - url: https://www.youtube.com/embed/dQw4w9WgXcQ
+    title: "Presentación Final: Equipo Alpha"
+  - url: https://www.youtube.com/embed/dQw4w9WgXcQ
+    title: "Presentación Final: Equipo Beta"
 ---
