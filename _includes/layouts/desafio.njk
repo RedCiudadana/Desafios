@@ -281,7 +281,7 @@
                         <h2 class="text-center mb-4">Inscríbete al Desafío</h2>
                         <p class="text-center mb-4">Completa el siguiente formulario para participar en este reto ciudadano. Nuestro equipo revisará tu solicitud y te contactará con los siguientes pasos.</p>
 
-                        <form class="registration-form" id="registration-form-element" target="_self" onsubmit="return submitRegistration();" autocomplete="off">
+                        <form class="registration-form" id="registration-form-element" autocomplete="off">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -346,9 +346,17 @@
                                 </label>
                             </div>
 
-                            <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit-btn">
                                 <i class="fa-solid fa-paper-plane"></i> Enviar Inscripción
                             </button>
+                            <div id="registration-loading" style="display:none;" class="text-center mt-3">
+                                <i class="fa-solid fa-spinner fa-spin fa-2x"></i>
+                                <p>Enviando tu inscripción...</p>
+                            </div>
+                            <div id="registration-error" style="display:none;" class="alert alert-danger mt-3">
+                                <i class="fa-solid fa-exclamation-circle"></i>
+                                <span id="error-message">Hubo un error al enviar tu inscripción. Por favor, intenta de nuevo.</span>
+                            </div>
                         </form>
 
                         <div id="registration-success" style="display:none;" class="alert alert-success mt-4 text-center">
@@ -387,37 +395,74 @@
 {% endblock %}
 
 {% block body_javascripts %}
-<script>
-    function submitRegistration() {
-        var formData = {
-            name: $("#reg_name").val(),
-            email: $("#reg_email").val(),
-            phone: $("#reg_phone").val(),
-            type: $("#reg_type").val(),
-            organization: $("#reg_organization").val(),
-            location: $("#reg_location").val(),
-            idea: $("#reg_idea").val(),
-            experience: $("#reg_experience").val(),
+<script type="module">
+    import { supabase } from '/assets/js/supabase-client.js';
+
+    async function handleRegistrationSubmit(formData) {
+        try {
+            const { data, error } = await supabase
+                .from('challenge_registrations')
+                .insert([{
+                    name: formData.name,
+                    email: formData.email,
+                    phone: formData.phone,
+                    participant_type: formData.type,
+                    organization: formData.organization || null,
+                    location: formData.location,
+                    idea: formData.idea,
+                    experience: formData.experience || null,
+                    challenge_name: formData.challenge
+                }])
+                .select();
+
+            if (error) {
+                console.error('Error submitting registration:', error);
+                throw error;
+            }
+
+            document.getElementById('registration-success').style.display = 'block';
+            document.getElementById('registration-form-element').style.display = 'none';
+
+            return { success: true, data };
+        } catch (error) {
+            console.error('Registration error:', error);
+            alert('Hubo un error al enviar tu inscripción. Por favor, intenta de nuevo.');
+            return { success: false, error: error.message };
+        }
+    }
+
+    document.getElementById('registration-form-element').addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        const submitBtn = document.getElementById('submit-btn');
+        const loadingDiv = document.getElementById('registration-loading');
+        const errorDiv = document.getElementById('registration-error');
+
+        submitBtn.disabled = true;
+        loadingDiv.style.display = 'block';
+        errorDiv.style.display = 'none';
+
+        const formData = {
+            name: document.getElementById('reg_name').value,
+            email: document.getElementById('reg_email').value,
+            phone: document.getElementById('reg_phone').value,
+            type: document.getElementById('reg_type').value,
+            organization: document.getElementById('reg_organization').value,
+            location: document.getElementById('reg_location').value,
+            idea: document.getElementById('reg_idea').value,
+            experience: document.getElementById('reg_experience').value,
             challenge: "{{ title }}"
         };
 
-        $.ajax({
-            url: "https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse?",
-            data: formData,
-            type: "POST",
-            dataType: "xml",
-            success: function(d) {
-                $('#registration-success').show();
-                $('#registration-form-element').hide();
-            },
-            error: function(x, y, z) {
-                $('#registration-success').show();
-                $('#registration-form-element').hide();
-            }
-        });
+        const result = await handleRegistrationSubmit(formData);
 
-        return false;
-    }
+        loadingDiv.style.display = 'none';
+
+        if (!result.success) {
+            submitBtn.disabled = false;
+            errorDiv.style.display = 'block';
+        }
+    });
 
     // Smooth scroll to registration form
     document.querySelectorAll('a[href="#registration-form"]').forEach(anchor => {
