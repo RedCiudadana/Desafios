@@ -36,4 +36,26 @@ date: 2025-02-02T18:00:26.995Z
 link: https://redciudadana.org/
 link2: https://redciudadana.org/
 highlight: true
+stage1_videos:
+  - url: https://www.youtube.com/embed/videoseries?list=PLrAXtmErZgOeiKm4sgNOknGvNjby9efdf
+    title: "Propuesta 1: Sistema de Ranking Municipal"
+  - url: https://www.youtube.com/embed/3JZ_D3ELwOQ
+    title: "Propuesta 2: Plataforma Comparativa de Municipios"
+stage2_videos:
+  - url: https://www.youtube.com/embed/y8Kyi0WNg40
+    title: "Mentoría: Metodología de Evaluación Municipal"
+  - url: https://www.youtube.com/embed/QH2-TGUlwu4
+    title: "Mentoría: Integración de Datos de SEGEPLAN"
+  - url: https://www.youtube.com/embed/videoseries?list=PLrAXtmErZgOeiKm4sgNOknGvNjby9efdf
+    title: "Mentoría: Diseño de Indicadores de Gestión"
+stage3_videos:
+  - url: https://www.youtube.com/embed/3JZ_D3ELwOQ
+    title: "Presentación: Proyecto RankingMuni"
+  - url: https://www.youtube.com/embed/y8Kyi0WNg40
+    title: "Presentación: Proyecto GobiernoLocal+"
+stage4_videos:
+  - url: https://www.youtube.com/embed/QH2-TGUlwu4
+    title: "Ceremonia de Premiación: Mejores Propuestas 2025"
+  - url: https://www.youtube.com/embed/videoseries?list=PLrAXtmErZgOeiKm4sgNOknGvNjby9efdf
+    title: "Reconocimientos y Próximos Pasos"
 ---
