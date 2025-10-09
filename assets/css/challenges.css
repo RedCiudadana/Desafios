@@ -560,3 +560,33 @@
         padding: 10px 15px;
     }
 }
+
+/* Sponsors Card */
+.sponsors-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.sponsors-card h4 {
+    color: #123e61;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Titulos-Bold', sans-serif;
+}
+
+.sponsors-image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.sponsors-image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

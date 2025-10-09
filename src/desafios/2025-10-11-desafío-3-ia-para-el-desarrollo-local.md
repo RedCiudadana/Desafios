@@ -25,6 +25,7 @@ date: 2025-10-11T00:00:00.000Z
 link: https://redciudadana.org/
 link2: https://redciudadana.org/
 highlight: true
+sponsors_image: /assets/img/banners/Logo para banners y reportes oficiales PNUD (2).png
 stage1_videos:
   - url: https://www.youtube.com/embed/3JZ_D3ELwOQ
     title: "Propuesta 1: Chatbot Municipal Inclusivo"

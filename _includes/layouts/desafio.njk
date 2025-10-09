@@ -267,6 +267,16 @@
                             <li><i class="fa-solid fa-check-circle"></i> Integración a sandbox de desarrollo</li>
                         </ul>
                     </div>
+
+                    <!-- Sponsors -->
+                    {% if sponsors_image %}
+                    <div class="sidebar-card sponsors-card">
+                        <h4>Gracias al apoyo de:</h4>
+                        <div class="sponsors-image-wrapper">
+                            <img src="{{sponsors_image}}" alt="Sponsors" class="img-fluid">
+                        </div>
+                    </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
