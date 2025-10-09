@@ -55,6 +55,16 @@ a:hover{
     background-color: #033250;
     padding: 30px 5%;
 }
+
+@media only screen and (max-width: 900px) {
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .navbar-brand img {
+        width: 150px !important;
+    }
+}
 .navbar-brand,
 .navbar-nav .nav-link {
     color: #ffffff;
@@ -70,6 +80,12 @@ a:hover{
     font-size: 3rem;
 }
 
+@media only screen and (max-width: 900px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
 .hero2 {
     background-color: #033250;
     color: #ffffff;
@@ -79,6 +95,12 @@ a:hover{
 
 .hero2 h1 {
     font-size: 3rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .hero2 h1 {
+        font-size: 2rem;
+    }
 }
 
 
@@ -97,9 +119,22 @@ a:hover{
     text-align: center;
     margin: 2rem 0 5rem 0 ;
 }
+
+@media only screen and (max-width: 900px) {
+    .section-title {
+        margin: 1rem 0 2rem 0;
+        font-size: 1.5rem;
+    }
+}
 .info-icons .col-md-3 {
     text-align: center;
     padding: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    .info-icons .col-md-3 {
+        padding: 15px 10px;
+    }
 }
 .info-icons i {
     font-size: 2rem;
@@ -137,6 +172,12 @@ a:hover{
     padding: 50px;
     color: #033250;
     margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    .card-body {
+        padding: 30px 20px;
+    }
 }
 
 .card:hover .card-body{
@@ -208,6 +249,13 @@ a:hover{
     border-color: #fff;
 }
 
+@media only screen and (max-width: 900px) {
+    .btn-primary {
+        padding: 10px 30px;
+        font-size: 0.9rem;
+    }
+}
+
 .btn-primary:hover{
     background-color: #A3D0E8;
     color: #212529;
@@ -222,6 +270,14 @@ a:hover{
     transition:all ease 0.5s;
 }
 
+@media only screen and (max-width: 900px) {
+    .btn-primary-light {
+        padding: 10px 30px;
+        font-size: 0.9rem;
+        margin: 5px !important;
+    }
+}
+
 .btn-primary-light:hover{
     background-color: #a3d1e9;
     color: #212529;
@@ -233,10 +289,24 @@ a:hover{
     padding: 2rem;
 }
 
+@media only screen and (max-width: 900px) {
+    .bg-white-ct {
+        padding: 1.5rem;
+        font-size: 0.95rem;
+    }
+}
+
 .bg-blue-ct{
     background-color: #39A4DC;
     border-radius: 10px;
     padding: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .bg-blue-ct {
+        padding: 1.5rem;
+        text-align: center;
+    }
 }
 
 .contact_form{
@@ -248,6 +318,8 @@ a:hover{
     margin-bottom: 20px;
     padding: 10px;
     border: 0.5px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 .contact_form textarea{
@@ -255,6 +327,21 @@ a:hover{
     margin-bottom: 20px;
     padding: 10px;
     border: 0.5px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    min-height: 120px;
+}
+
+@media only screen and (max-width: 900px) {
+    .contact_form input,
+    .contact_form textarea {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .contact_form textarea {
+        min-height: 150px;
+    }
 }
 
 footer {
@@ -305,11 +392,25 @@ footer a {
     margin: 20px 0;
 }
 
+@media only screen and (max-width: 900px) {
+    .img-explicativo {
+        width: 100px;
+        margin: 15px 0;
+    }
+}
+
 .img-explicativo2{
     width: 250px;
     height: auto;
     margin: auto;
     margin: 20px 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .img-explicativo2 {
+        width: 150px;
+        margin: 15px 0;
+    }
 }
 
 .centered{
@@ -323,4 +424,86 @@ footer a {
 .ic-desafio{
     margin-bottom: 20px;
     margin-right: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+p, span {
+    overflow-wrap: break-word;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero img {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    .hero img {
+        width: 80% !important;
+    }
+
+    .hero .d-flex {
+        flex-direction: column;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.1rem;
+    }
+
+    .info-icons h5 {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .navbar-nav {
+        padding-top: 10px;
+    }
+
+    .navbar-nav .nav-item {
+        padding: 5px 0;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+
+    a, button {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    ol {
+        padding-left: 25px;
+    }
+
+    ol li {
+        margin-bottom: 15px;
+        line-height: 1.6;
+    }
 }

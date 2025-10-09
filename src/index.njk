@@ -15,9 +15,9 @@ permalink: "index.html"
         <div class="row">
             <div class="col-lg-12">
                 <img style="width: 50%; margin: auto;" src="/assets/img/home/DC-01.png">
-                <div class="d-flex my-5 justify-content-center">
-                    <a href="/desafios/index.html" class="btn-primary-light mx-4">Participa Ahora</a>
-                    <a href="/metodologia/index.html" class="btn-primary-light mx-4">Metodología</a>
+                <div class="d-flex flex-wrap my-5 justify-content-center">
+                    <a href="/desafios/index.html" class="btn-primary-light mx-2 mx-md-4 my-2">Participa Ahora</a>
+                    <a href="/metodologia/index.html" class="btn-primary-light mx-2 mx-md-4 my-2">Metodología</a>
                 </div>
                 <img style="width: 50%; margin: auto;" src="/assets/img/home/DC-03.png">
             </div>
@@ -27,12 +27,12 @@ permalink: "index.html"
     <!-- Info Section -->
     <div class="container">
         <div class="row mt-ct section-title">
-            <div class="col-md-6">
+            <div class="col-md-6 mb-4 mb-md-0">
                 <img class="img-explicativo" src="/assets/img/iconos/DC-07.png">
                 <h3 class="mb-4">¿Qué es un Desafío Ciudadano?</h3>
                 <p>Un <b>Desafío Ciudadano</b> es una convocatoria en línea abierta a toda la comunidad para proponer e implementar soluciones innovadoras a problemas sociales críticos, como la migración, la salud y la educación. Estos desafíos buscan aprovechar el talento y la creatividad de ciudadanos, tecnólogos, activistas y expertos en diversas áreas para generar un impacto real en las comunidades.				</p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 mb-4 mb-md-0">
                 <img class="img-explicativo" src="/assets/img/iconos/DC-08.png">
                 <h3 class="mb-4">¿Quién puede participar?</h3>
                 <p>Ingenieros, Tecnólogos, Ciudadanos comprometidos, Científicos, Diseñadores, Activistas y cualquiera que tenga una idea de solución y las habilidades para implementarla.</p>
@@ -70,7 +70,7 @@ permalink: "index.html"
                     <h3 class="section-title">Últimos Retos Creados</h3>
                 </div>
                 {% for desafio in collections.desafios %}
-                <div class="col-md-4 my-2">
+                <div class="col-md-4 col-sm-6 my-3">
                     <div class="card challenge-card">
                         <a href="{{desafio.url}}">
                         <img src="{{desafio.data.image}}" class="card-img-top" alt="Reto 1">

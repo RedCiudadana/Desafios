@@ -6,6 +6,12 @@
     transition: 0.5s all ease;
 }
 
+@media only screen and (max-width: 900px) {
+    .logo_footer {
+        width: 180px;
+    }
+}
+
 .logo_footer:hover{
     transform: scale(1.1);
 }
@@ -16,11 +22,24 @@
     text-align: left;
 }
 
+@media only screen and (max-width: 900px) {
+    .text_footer {
+        font-size: 0.9rem;
+    }
+}
+
 .title_footer{
     color: #fff;
     font-size: 15px;
     margin-bottom: 0px;
     text-align: left;
+}
+
+@media only screen and (max-width: 900px) {
+    .title_footer {
+        font-size: 14px;
+        margin-top: 10px;
+    }
 }
 
 .text_footer_2{
@@ -29,11 +48,23 @@
     margin-bottom: 0;
 }
 
+@media only screen and (max-width: 900px) {
+    .text_footer_2 {
+        font-size: 14px;
+    }
+}
+
 .red_footer{
     width: 50px;
     height: auto;
     margin-right: 2px;
     transition: 0.5s all ease;
+}
+
+@media only screen and (max-width: 900px) {
+    .red_footer {
+        width: 40px;
+    }
 }
 
 .red_footer:hover{
@@ -76,6 +107,13 @@
     text-decoration: underline!important;
 }
 
+@media only screen and (max-width: 900px) {
+    .links-footer > a,
+    .links-footer > div {
+        font-size: 0.9rem;
+    }
+}
+
 .links-footer a ul,
 .links-footer div ul {
     position: absolute;
@@ -114,4 +152,17 @@
 .links-footer div ul li a:hover {
     background-color: #f2f2f2;
     color: #000;
+}
+
+footer .py-4 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
+
+@media only screen and (max-width: 900px) {
+    footer .col-lg-5,
+    footer .col-lg-3,
+    footer .col-lg-4 {
+        margin-bottom: 20px;
+    }
 }
