@@ -422,8 +422,17 @@
 <script type="module">
     import { supabase } from '/assets/js/supabase-client.js';
 
+    console.log('Supabase client loaded:', supabase ? 'Yes' : 'No');
+    console.log('Supabase config:', window.SUPABASE_CONFIG);
+
+    if (!supabase) {
+        console.error('Supabase client is not initialized!');
+    }
+
     async function handleRegistrationSubmit(formData) {
         try {
+            console.log('Submitting registration with data:', formData);
+
             const { data, error } = await supabase
                 .from('challenge_registrations')
                 .insert([{
@@ -440,18 +449,18 @@
                 .select();
 
             if (error) {
-                console.error('Error submitting registration:', error);
-                throw error;
+                console.error('Supabase error:', error);
+                throw new Error(error.message || 'Error al enviar la inscripción');
             }
 
+            console.log('Registration successful:', data);
             document.getElementById('registration-success').style.display = 'block';
             document.getElementById('registration-form-element').style.display = 'none';
 
             return { success: true, data };
         } catch (error) {
             console.error('Registration error:', error);
-            alert('Hubo un error al enviar tu inscripción. Por favor, intenta de nuevo.');
-            return { success: false, error: error.message };
+            return { success: false, error: error.message || 'Error desconocido' };
         }
     }
 
@@ -461,6 +470,7 @@
         const submitBtn = document.getElementById('submit-btn');
         const loadingDiv = document.getElementById('registration-loading');
         const errorDiv = document.getElementById('registration-error');
+        const errorMessage = document.getElementById('error-message');
 
         submitBtn.disabled = true;
         loadingDiv.style.display = 'block';
@@ -484,6 +494,7 @@
 
         if (!result.success) {
             submitBtn.disabled = false;
+            errorMessage.textContent = result.error || 'Hubo un error al enviar tu inscripción. Por favor, intenta de nuevo.';
             errorDiv.style.display = 'block';
         }
     });
