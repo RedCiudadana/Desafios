@@ -42,25 +42,25 @@ tags:
   - Rendición de Cuentas
   - Datos Abiertos
 stage1_videos:
-  - url: https://www.youtube.com/embed/videoseries?list=PLrAXtmErZgOeiKm4sgNOknGvNjby9efdf
+  - url: https://www.youtube.com/embed/gU6sa65YEeM
     title: "Propuesta 1: Sistema de Ranking Municipal"
-  - url: https://www.youtube.com/embed/3JZ_D3ELwOQ
+  - url: https://www.youtube.com/embed/gU6sa65YEeM
     title: "Propuesta 2: Plataforma Comparativa de Municipios"
 stage2_videos:
-  - url: https://www.youtube.com/embed/y8Kyi0WNg40
+  - url: https://www.youtube.com/embed/gU6sa65YEeM
     title: "Mentoría: Metodología de Evaluación Municipal"
-  - url: https://www.youtube.com/embed/QH2-TGUlwu4
+  - url: https://www.youtube.com/embed/gU6sa65YEeM
     title: "Mentoría: Integración de Datos de SEGEPLAN"
-  - url: https://www.youtube.com/embed/videoseries?list=PLrAXtmErZgOeiKm4sgNOknGvNjby9efdf
+  - url: https://www.youtube.com/embed/gU6sa65YEeM
     title: "Mentoría: Diseño de Indicadores de Gestión"
 stage3_videos:
-  - url: https://www.youtube.com/embed/3JZ_D3ELwOQ
+  - url: https://www.youtube.com/embed/gU6sa65YEeM
     title: "Presentación: Proyecto RankingMuni"
-  - url: https://www.youtube.com/embed/y8Kyi0WNg40
+  - url: https://www.youtube.com/embed/gU6sa65YEeM
     title: "Presentación: Proyecto GobiernoLocal+"
 stage4_videos:
-  - url: https://www.youtube.com/embed/QH2-TGUlwu4
+  - url: https://www.youtube.com/embed/gU6sa65YEeM
     title: "Ceremonia de Premiación: Mejores Propuestas 2025"
-  - url: https://www.youtube.com/embed/videoseries?list=PLrAXtmErZgOeiKm4sgNOknGvNjby9efdf
+  - url: https://www.youtube.com/embed/gU6sa65YEeM
     title: "Reconocimientos y Próximos Pasos"
 ---

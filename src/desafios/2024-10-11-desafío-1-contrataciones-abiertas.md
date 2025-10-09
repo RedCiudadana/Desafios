@@ -42,25 +42,25 @@ tags:
   - Gobierno Abierto
   - Datos Abiertos
 stage1_videos:
-  - url: https://www.youtube.com/embed/3JZ_D3ELwOQ
+  - url: https://www.youtube.com/embed/gU6sa65YEeM
     title: "Propuesta 1: Plataforma de Monitoreo Ciudadano"
-  - url: https://www.youtube.com/embed/y8Kyi0WNg40
+  - url: https://www.youtube.com/embed/gU6sa65YEeM
     title: "Propuesta 2: App Móvil de Transparencia"
-  - url: https://www.youtube.com/embed/videoseries?list=PLrAXtmErZgOeiKm4sgNOknGvNjby9efdf
+  - url: https://www.youtube.com/embed/gU6sa65YEeM
     title: "Propuesta 3: Dashboard Interactivo de Contrataciones"
 stage2_videos:
-  - url: https://www.youtube.com/embed/QH2-TGUlwu4
+  - url: https://www.youtube.com/embed/gU6sa65YEeM
     title: "Sesión de Mentoría: Diseño de Base de Datos"
-  - url: https://www.youtube.com/embed/QH2-TGUlwu4
+  - url: https://www.youtube.com/embed/gU6sa65YEeM
     title: "Sesión de Mentoría: Visualización de Datos"
 stage3_videos:
-  - url: https://www.youtube.com/embed/3JZ_D3ELwOQ
+  - url: https://www.youtube.com/embed/gU6sa65YEeM
     title: "Presentación Final: Equipo Alpha"
-  - url: https://www.youtube.com/embed/y8Kyi0WNg40
+  - url: https://www.youtube.com/embed/gU6sa65YEeM
     title: "Presentación Final: Equipo Beta"
-  - url: https://www.youtube.com/embed/videoseries?list=PLrAXtmErZgOeiKm4sgNOknGvNjby9efdf
+  - url: https://www.youtube.com/embed/gU6sa65YEeM
     title: "Presentación Final: Equipo Gamma"
 stage4_videos:
-  - url: https://www.youtube.com/embed/QH2-TGUlwu4
+  - url: https://www.youtube.com/embed/gU6sa65YEeM
     title: "Ceremonia de Premiación y Anuncio de Ganadores"
 ---
