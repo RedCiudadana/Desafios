@@ -6,61 +6,335 @@
 
 {% block content %}
 
-    <!-- Info Section -->
-    <div class="container">
-        <div class="row my-ct bg-white-ct">
-            <div class="col-md-4 my-2">
-                <img class="w-100" src="{{image}}">
-            </div>
-            <div class="col-md-8 my-2" style="padding: 0 5%;">
-                <h2>{{title}}</h2>
-                <p>{{description | rmj |safe}}</p>
-                <div class="d-flex-ct">
-                    <a href="{{liink}}" class="btn btn-primary" style="margin-right: 20px;">Descarga los Detalles</a>
-                    <a href="{{liink}}" class="btn btn-primary">Participa</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Objetivos Section -->
-    <div class="container px-0">
-        <div class="row my-ct2 ">
-            <div class="col-lg-6 my-2">
-                <div class="bg-white-ct h-100">
-                    <div class="d-flex align-items-center">
-                        <img class="ic-desafio" src="/assets/img/iconos/DC_iconos-02.png">
-                        <h3>Objetivos</h3>
-                    </div>
-                    {{objetivos | rmj | safe}}
-                </div>
-            </div>
-
-            <div class="col-lg-6 my-2">
-                <div class="bg-white-ct h-100">
-                    <div class="d-flex align-items-center">
-                        <img class="ic-desafio" src="/assets/img/iconos/DC_iconos-03.png">
-                        <h3>Premio</h3>
-                    </div>
-                    <p>{{premio}}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Criterios Section -->
-    <div class="container ">
-        <div class="row my-ct2 bg-white-ct">
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="row py-ct">
             <div class="col-lg-12">
-                <div class="bg-white-ct">
-                    <div class="d-flex align-items-center">
-                        <img class="ic-desafio" src="/assets/img/iconos/DC_iconos-01.png">
-                        <h3>Criterios de Evaluación</h3>
+                <h1 class="text-white">{{ title }}</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Challenge Overview Section -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="challenge-main-content">
+                    <div class="challenge-image-wrapper mb-4">
+                        <img class="challenge-detail-image" src="{{image}}" alt="{{ title }}">
                     </div>
-                    {{objetivos | rmj | safe}}
+
+                    <div class="challenge-description mb-4">
+                        <h3 class="section-subtitle">Acerca del Desafío</h3>
+                        <div class="description-content">
+                            {{description | rmj | safe}}
+                        </div>
+                    </div>
+
+                    <!-- Objectives -->
+                    <div class="challenge-section mb-4">
+                        <div class="section-header">
+                            <img class="section-icon" src="/assets/img/iconos/DC_iconos-02.png" alt="Objetivos">
+                            <h3 class="section-subtitle">Objetivos</h3>
+                        </div>
+                        <div class="section-content">
+                            {{objetivos | rmj | safe}}
+                        </div>
+                    </div>
+
+                    <!-- Evaluation Criteria -->
+                    <div class="challenge-section mb-4">
+                        <div class="section-header">
+                            <img class="section-icon" src="/assets/img/iconos/DC_iconos-01.png" alt="Criterios">
+                            <h3 class="section-subtitle">Criterios de Evaluación</h3>
+                        </div>
+                        <div class="section-content">
+                            {{criterios | rmj | safe}}
+                        </div>
+                    </div>
+
+                    <!-- Challenge Stages -->
+                    <div class="challenge-section mb-4">
+                        <h3 class="section-subtitle">Etapas del Reto</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker">1</div>
+                                <div class="timeline-content">
+                                    <h5>Ideación</h5>
+                                    <p>Presentación de propuestas innovadoras que respondan al desafío planteado.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker">2</div>
+                                <div class="timeline-content">
+                                    <h5>Mentoría</h5>
+                                    <p>Acompañamiento técnico y sesiones de orientación con expertos para refinar las propuestas.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker">3</div>
+                                <div class="timeline-content">
+                                    <h5>Presentación Pública</h5>
+                                    <p>Exposición de prototipos y soluciones ante un jurado de evaluadores.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker">4</div>
+                                <div class="timeline-content">
+                                    <h5>Premiación</h5>
+                                    <p>Reconocimiento a las mejores propuestas y apoyo para su implementación.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Who Can Participate -->
+                    <div class="challenge-section mb-4">
+                        <h3 class="section-subtitle">¿Quiénes pueden participar?</h3>
+                        <div class="participant-types">
+                            <div class="participant-card">
+                                <i class="fa-solid fa-users"></i>
+                                <h5>Jóvenes y Estudiantes</h5>
+                                <p>Con ideas innovadoras y ganas de generar cambio social.</p>
+                            </div>
+                            <div class="participant-card">
+                                <i class="fa-solid fa-laptop-code"></i>
+                                <h5>Tecnólogos y Desarrolladores</h5>
+                                <p>Con habilidades técnicas para crear soluciones digitales.</p>
+                            </div>
+                            <div class="participant-card">
+                                <i class="fa-solid fa-handshake"></i>
+                                <h5>Organizaciones de la Sociedad Civil</h5>
+                                <p>Comprometidas con el desarrollo local y la transparencia.</p>
+                            </div>
+                            <div class="participant-card">
+                                <i class="fa-solid fa-lightbulb"></i>
+                                <h5>Ciudadanía en General</h5>
+                                <p>Cualquier persona con interés en contribuir a su comunidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="challenge-sidebar">
+                    <!-- Prize -->
+                    <div class="sidebar-card prize-card mb-4">
+                        <div class="card-icon">
+                            <img src="/assets/img/iconos/DC_iconos-03.png" alt="Premio">
+                        </div>
+                        <h4>Premio</h4>
+                        <p class="prize-description">{{premio}}</p>
+                    </div>
+
+                    <!-- Deadline -->
+                    <div class="sidebar-card deadline-card mb-4">
+                        <h4>Fecha Límite</h4>
+                        <div class="deadline-date">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span>{{date | dateFormat('DD/MM/YYYY')}}</span>
+                        </div>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="sidebar-card actions-card mb-4">
+                        <h4>Acciones</h4>
+                        <div class="action-buttons">
+                            <a href="#registration-form" class="btn btn-primary btn-block mb-3">
+                                <i class="fa-solid fa-user-plus"></i> Participar Ahora
+                            </a>
+                            <a href="{{link}}" class="btn btn-outline-primary btn-block mb-3" target="_blank">
+                                <i class="fa-solid fa-download"></i> Descargar Detalles
+                            </a>
+                            <a href="{{link2}}" class="btn btn-outline-primary btn-block" target="_blank">
+                                <i class="fa-solid fa-info-circle"></i> Más Información
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Campaign Info -->
+                    <div class="sidebar-card campaign-card mb-4">
+                        <h4>Difusión y Alcance</h4>
+                        <ul class="campaign-list">
+                            <li><i class="fa-solid fa-bullhorn"></i> Campaña digital en redes sociales</li>
+                            <li><i class="fa-solid fa-school"></i> Difusión en escuelas y universidades</li>
+                            <li><i class="fa-solid fa-radio"></i> Promoción en radios comunitarias</li>
+                            <li><i class="fa-solid fa-chalkboard-teacher"></i> Talleres de inspiración presenciales</li>
+                        </ul>
+                    </div>
+
+                    <!-- Support -->
+                    <div class="sidebar-card support-card">
+                        <h4>Apoyo Incluido</h4>
+                        <ul class="support-list">
+                            <li><i class="fa-solid fa-check-circle"></i> Mentoría técnica especializada</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Acompañamiento durante el proceso</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Visibilidad pública del proyecto</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Integración a sandbox de desarrollo</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Registration Form Section -->
+    <div class="registration-section" id="registration-form">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="registration-card">
+                        <h2 class="text-center mb-4">Inscríbete al Desafío</h2>
+                        <p class="text-center mb-4">Completa el siguiente formulario para participar en este reto ciudadano. Nuestro equipo revisará tu solicitud y te contactará con los siguientes pasos.</p>
+
+                        <form class="registration-form" id="registration-form-element" target="_self" onsubmit="return submitRegistration();" autocomplete="off">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="reg_name">Nombre Completo *</label>
+                                        <input id="reg_name" name="entry.name" type="text" class="form-control" required placeholder="Tu nombre completo"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="reg_email">Correo Electrónico *</label>
+                                        <input id="reg_email" name="entry.email" type="email" class="form-control" required placeholder="tu@email.com"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="reg_phone">Teléfono *</label>
+                                        <input id="reg_phone" name="entry.phone" type="tel" class="form-control" required placeholder="Número de teléfono"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="reg_type">Tipo de Participante *</label>
+                                        <select id="reg_type" name="entry.type" class="form-control" required>
+                                            <option value="">Selecciona una opción</option>
+                                            <option value="estudiante">Estudiante</option>
+                                            <option value="profesional">Profesional / Tecnólogo</option>
+                                            <option value="osc">Organización de la Sociedad Civil</option>
+                                            <option value="ciudadano">Ciudadano/a</option>
+                                            <option value="otro">Otro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="reg_organization">Organización / Institución (opcional)</label>
+                                <input id="reg_organization" name="entry.organization" type="text" class="form-control" placeholder="Nombre de tu organización o institución"/>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="reg_location">Municipio / Departamento *</label>
+                                <input id="reg_location" name="entry.location" type="text" class="form-control" required placeholder="Tu ubicación"/>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="reg_idea">Describe brevemente tu idea o propuesta *</label>
+                                <textarea id="reg_idea" name="entry.idea" class="form-control" required placeholder="Cuéntanos sobre tu propuesta de solución..." rows="5"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="reg_experience">Experiencia previa (opcional)</label>
+                                <textarea id="reg_experience" name="entry.experience" class="form-control" placeholder="Experiencia relevante en proyectos similares..." rows="3"></textarea>
+                            </div>
+
+                            <div class="form-check mb-4">
+                                <input type="checkbox" class="form-check-input" id="reg_terms" required>
+                                <label class="form-check-label" for="reg_terms">
+                                    Acepto las bases del desafío y autorizo el uso de mis datos para fines de la convocatoria *
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">
+                                <i class="fa-solid fa-paper-plane"></i> Enviar Inscripción
+                            </button>
+                        </form>
+
+                        <div id="registration-success" style="display:none;" class="alert alert-success mt-4 text-center">
+                            <i class="fa-solid fa-check-circle fa-3x mb-3"></i>
+                            <h4>¡Inscripción Exitosa!</h4>
+                            <p>Gracias por tu interés en participar. Hemos recibido tu solicitud y nuestro equipo la revisará pronto. Te contactaremos con los siguientes pasos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Challenges -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Otros Desafíos Activos</h2>
+        <div class="row">
+            {% for desafio in collections.desafios | limit(3) %}
+            {% if desafio.data.title != title %}
+            <div class="col-md-4 mb-4">
+                <div class="card challenge-card">
+                    <a href="{{desafio.url}}">
+                        <img src="{{desafio.data.image}}" class="card-img-top" alt="{{desafio.data.title}}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{desafio.data.title}}</h5>
+                            <p class="card-text">{{desafio.data.description | rmj | safe | truncate(150)}}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block body_javascripts %}
+<script>
+    function submitRegistration() {
+        var formData = {
+            name: $("#reg_name").val(),
+            email: $("#reg_email").val(),
+            phone: $("#reg_phone").val(),
+            type: $("#reg_type").val(),
+            organization: $("#reg_organization").val(),
+            location: $("#reg_location").val(),
+            idea: $("#reg_idea").val(),
+            experience: $("#reg_experience").val(),
+            challenge: "{{ title }}"
+        };
+
+        $.ajax({
+            url: "https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse?",
+            data: formData,
+            type: "POST",
+            dataType: "xml",
+            success: function(d) {
+                $('#registration-success').show();
+                $('#registration-form-element').hide();
+            },
+            error: function(x, y, z) {
+                $('#registration-success').show();
+                $('#registration-form-element').hide();
+            }
+        });
+
+        return false;
+    }
+
+    // Smooth scroll to registration form
+    document.querySelectorAll('a[href="#registration-form"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector('#registration-form').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
 {% endblock %}

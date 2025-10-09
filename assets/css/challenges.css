@@ -1,0 +1,487 @@
+/* Challenge Detail Page Styles */
+
+/* Main Content */
+.challenge-main-content {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.challenge-image-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.challenge-detail-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.section-subtitle {
+    color: #123e61;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Titulos-Bold', sans-serif;
+}
+
+.description-content {
+    color: #333;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* Challenge Sections */
+.challenge-section {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid #39A4DC;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.section-content {
+    color: #333;
+    line-height: 1.7;
+}
+
+.section-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.section-content ul li {
+    padding: 8px 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-content ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #39A4DC;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 22px;
+    top: 50px;
+    width: 2px;
+    height: calc(100% + 10px);
+    background: #39A4DC;
+    opacity: 0.3;
+}
+
+.timeline-marker {
+    min-width: 45px;
+    height: 45px;
+    background: #39A4DC;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.timeline-content h5 {
+    color: #123e61;
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-family: 'Titulos-Semibold', sans-serif;
+}
+
+.timeline-content p {
+    color: #666;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+/* Participant Types */
+.participant-types {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.participant-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid #e3e6ed;
+    transition: all 0.3s ease;
+}
+
+.participant-card:hover {
+    border-color: #39A4DC;
+    box-shadow: 0 4px 12px rgba(57, 164, 220, 0.2);
+    transform: translateY(-5px);
+}
+
+.participant-card i {
+    font-size: 40px;
+    color: #39A4DC;
+    margin-bottom: 15px;
+}
+
+.participant-card h5 {
+    color: #123e61;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: 'Cuerpos-Semibold', sans-serif;
+}
+
+.participant-card p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* Sidebar Styles */
+.challenge-sidebar {
+    position: sticky;
+    top: 20px;
+}
+
+.sidebar-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-card h4 {
+    color: #123e61;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Titulos-Semibold', sans-serif;
+}
+
+.prize-card {
+    background: linear-gradient(135deg, #39A4DC 0%, #123e61 100%);
+    color: white;
+}
+
+.prize-card h4 {
+    color: white;
+}
+
+.card-icon {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.prize-description {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.deadline-card {
+    border-left: 4px solid #ff6b6b;
+}
+
+.deadline-date {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #123e61;
+    font-weight: bold;
+}
+
+.deadline-date i {
+    font-size: 24px;
+    color: #ff6b6b;
+    margin-right: 10px;
+}
+
+/* Action Buttons */
+.action-buttons .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-outline-primary {
+    border: 2px solid #39A4DC;
+    color: #39A4DC;
+}
+
+.btn-outline-primary:hover {
+    background: #39A4DC;
+    color: white;
+}
+
+/* Campaign and Support Lists */
+.campaign-list,
+.support-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.campaign-list li,
+.support-list li {
+    padding: 10px 0;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #e3e6ed;
+}
+
+.campaign-list li:last-child,
+.support-list li:last-child {
+    border-bottom: none;
+}
+
+.campaign-list i,
+.support-list i {
+    color: #39A4DC;
+    margin-right: 10px;
+    font-size: 18px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* Registration Section */
+.registration-section {
+    background: linear-gradient(135deg, #123e61 0%, #39A4DC 100%);
+    padding: 60px 0;
+    margin-top: 60px;
+}
+
+.registration-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.registration-card h2 {
+    color: #123e61;
+    font-family: 'Titulos-Bold', sans-serif;
+}
+
+.registration-form .form-group {
+    margin-bottom: 20px;
+}
+
+.registration-form label {
+    color: #123e61;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+    font-family: 'Cuerpos-Semibold', sans-serif;
+}
+
+.registration-form .form-control {
+    border: 2px solid #e3e6ed;
+    border-radius: 6px;
+    padding: 12px 15px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.registration-form .form-control:focus {
+    border-color: #39A4DC;
+    box-shadow: 0 0 0 0.2rem rgba(57, 164, 220, 0.15);
+}
+
+.registration-form select.form-control {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    padding-right: 40px;
+}
+
+.registration-form textarea.form-control {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-check-label {
+    color: #666;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.registration-form .btn-primary {
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* Challenge Cards */
+.challenge-card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.challenge-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.challenge-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.challenge-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.challenge-card .card-body {
+    padding: 20px;
+}
+
+.challenge-card .card-title {
+    color: #123e61;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Titulos-Semibold', sans-serif;
+}
+
+.challenge-card .card-text {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .challenge-sidebar {
+        position: static;
+        margin-top: 30px;
+    }
+
+    .participant-types {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-marker {
+        min-width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .challenge-main-content {
+        padding: 20px;
+    }
+
+    .section-subtitle {
+        font-size: 20px;
+    }
+
+    .participant-types {
+        grid-template-columns: 1fr;
+    }
+
+    .participant-card {
+        padding: 20px;
+    }
+
+    .participant-card i {
+        font-size: 32px;
+    }
+
+    .registration-section {
+        padding: 40px 0;
+    }
+
+    .registration-card {
+        padding: 25px;
+    }
+
+    .registration-card h2 {
+        font-size: 24px;
+    }
+
+    .sidebar-card {
+        padding: 20px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+    }
+
+    .timeline-item:not(:last-child)::after {
+        left: 22px;
+        top: 60px;
+    }
+
+    .timeline-marker {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .challenge-main-content {
+        padding: 15px;
+    }
+
+    .section-subtitle {
+        font-size: 18px;
+    }
+
+    .registration-card {
+        padding: 20px;
+    }
+
+    .action-buttons .btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
