@@ -329,27 +329,88 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="reg_type">Tipo de Participante *</label>
-                                        <select id="reg_type" name="entry.type" class="form-control" required>
-                                            <option value="">Selecciona una opción</option>
-                                            <option value="estudiante">Estudiante</option>
-                                            <option value="profesional">Profesional / Tecnólogo</option>
-                                            <option value="osc">Organización de la Sociedad Civil</option>
-                                            <option value="ciudadano">Ciudadano/a</option>
-                                            <option value="otro">Otro</option>
+                                        <label for="reg_organization">Institución/Organización representada</label>
+                                        <input id="reg_organization" name="entry.organization" type="text" class="form-control" placeholder="Nombre de tu organización o institución"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="reg_municipality">Municipio *</label>
+                                        <input id="reg_municipality" name="entry.municipality" type="text" class="form-control" required placeholder="Tu municipio"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="reg_position">Cargo</label>
+                                        <input id="reg_position" name="entry.position" type="text" class="form-control" placeholder="Tu cargo o posición"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="reg_sector">Sector / A qué te dedicas</label>
+                                        <input id="reg_sector" name="entry.sector" type="text" class="form-control" placeholder="Ej: Educación, Tecnología, Gobierno, etc."/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="reg_age">Edad *</label>
+                                        <select id="reg_age" name="entry.age" class="form-control" required>
+                                            <option value="">Selecciona un rango</option>
+                                            <option value="menos-13">Menos de 13 años</option>
+                                            <option value="13-17">13-17</option>
+                                            <option value="18-24">18-24</option>
+                                            <option value="25-44">25-44</option>
+                                            <option value="45-64">45-64</option>
+                                            <option value="65-mas">65 o más</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <label for="reg_organization">Organización / Institución (opcional)</label>
-                                <input id="reg_organization" name="entry.organization" type="text" class="form-control" placeholder="Nombre de tu organización o institución"/>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="reg_gender">Sexo *</label>
+                                        <select id="reg_gender" name="entry.gender" class="form-control" required>
+                                            <option value="">Selecciona una opción</option>
+                                            <option value="hombre">Hombre</option>
+                                            <option value="mujer">Mujer</option>
+                                            <option value="otro">Otro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="reg_ethnicity">Autoidentificación Étnica *</label>
+                                        <select id="reg_ethnicity" name="entry.ethnicity" class="form-control" required>
+                                            <option value="">Selecciona una opción</option>
+                                            <option value="maya">Maya</option>
+                                            <option value="garifuna">Garífuna</option>
+                                            <option value="afrodescendiente">Afrodescendiente</option>
+                                            <option value="xinca">Xinca</option>
+                                            <option value="ladino">Ladino / Mestizo</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="form-group">
-                                <label for="reg_location">Municipio / Departamento *</label>
-                                <input id="reg_location" name="entry.location" type="text" class="form-control" required placeholder="Tu ubicación"/>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="reg_disability">Persona con discapacidad *</label>
+                                        <select id="reg_disability" name="entry.disability" class="form-control" required>
+                                            <option value="">Selecciona una opción</option>
+                                            <option value="no">No</option>
+                                            <option value="si">Sí</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="form-group">
@@ -417,9 +478,14 @@
                     name: formData.name,
                     email: formData.email,
                     phone: formData.phone,
-                    participant_type: formData.type,
                     organization: formData.organization || null,
-                    location: formData.location,
+                    municipality: formData.municipality,
+                    position: formData.position || null,
+                    sector: formData.sector || null,
+                    age_range: formData.age,
+                    gender: formData.gender,
+                    ethnicity: formData.ethnicity,
+                    has_disability: formData.disability === 'si',
                     idea: formData.idea,
                     experience: formData.experience || null,
                     challenge_name: formData.challenge
@@ -458,9 +524,14 @@
             name: document.getElementById('reg_name').value,
             email: document.getElementById('reg_email').value,
             phone: document.getElementById('reg_phone').value,
-            type: document.getElementById('reg_type').value,
             organization: document.getElementById('reg_organization').value,
-            location: document.getElementById('reg_location').value,
+            municipality: document.getElementById('reg_municipality').value,
+            position: document.getElementById('reg_position').value,
+            sector: document.getElementById('reg_sector').value,
+            age: document.getElementById('reg_age').value,
+            gender: document.getElementById('reg_gender').value,
+            ethnicity: document.getElementById('reg_ethnicity').value,
+            disability: document.getElementById('reg_disability').value,
             idea: document.getElementById('reg_idea').value,
             experience: document.getElementById('reg_experience').value,
             challenge: "{{ title }}"
