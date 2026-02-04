@@ -24,6 +24,8 @@ collections:
       - { name: "date", label: "Fecha Límite", widget: "datetime" }
       - { name: "link", label: "Link de Participación" }
       - { name: "link2", label: "Link de Detalles" }
+      - { name: "sponsors_image", label: "Imagen de Sponsors", widget: "image", required: false }
+      - { name: "tags", label: "Tags", widget: "list", required: false }
       - {
           name: "highlight",
           label: "Highlight",
