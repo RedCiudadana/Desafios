@@ -1,10 +1,16 @@
 ---
 title: "Desafío 4: Fondo de Mini-Grants para Innovación Cívica con Datos Abiertos"
 image: /images/posts/dc.png
-description: >-
-  El Fondo de Mini-Grants para Innovación Cívica con Datos Abiertos es un mecanismo ágil, inclusivo y orientado a resultados que permite a organizaciones de la sociedad civil de Guatemala, Costa Rica y Panamá probar ideas, desarrollar prototipos livianos y fortalecer una cultura de uso estratégico de datos abiertos para promover la transparencia, la rendición de cuentas, la inclusión y la participación ciudadana.
+description: El Fondo de Mini-Grants para Innovación Cívica con Datos Abiertos
+  es un mecanismo ágil, inclusivo y orientado a resultados que permite a
+  organizaciones de la sociedad civil de Guatemala, Costa Rica y Panamá probar
+  ideas, desarrollar prototipos livianos y fortalecer una cultura de uso
+  estratégico de datos abiertos para promover la transparencia, la rendición de
+  cuentas, la inclusión y la participación ciudadana.
 objetivos: >-
-  * **Incentivar el uso práctico de datos abiertos**: Mediante prototipos, ideas estructuradas o pruebas de concepto que conviertan datos públicos en productos útiles y accionables.
+  * **Incentivar el uso práctico de datos abiertos**: Mediante prototipos, ideas
+  estructuradas o pruebas de concepto que conviertan datos públicos en productos
+  útiles y accionables.
 
   * **Fortalecer capacidades organizacionales**: En análisis, visualización y comunicación con datos para mejorar los procesos de vigilancia ciudadana e incidencia.
 
@@ -13,25 +19,35 @@ objetivos: >-
   * **Generar un portafolio regional de ideas replicables**: Con productos abiertos y documentados que puedan adaptarse en diferentes contextos.
 
   * **Fomentar el intercambio de aprendizajes**: A través de presentaciones públicas, demo-days y comunidades de práctica regionales.
-premio: >-
-  USD 500 por iniciativa. Se seleccionarán 3 iniciativas por país (Guatemala, Costa Rica y Panamá), para un total de 9 iniciativas regionales apoyadas. Además, las iniciativas seleccionadas recibirán acompañamiento técnico ligero (mentorías cortas), seguimiento durante el desarrollo y oportunidad de presentar sus resultados en un demo-day nacional o regional. Los productos finales se publicarán en un repositorio abierto regional.
-criterios: |-
-  * **Relevancia social y uso de datos abiertos (25 puntos)**: Claridad del problema abordado y pertinencia de los datos seleccionados.
+premio: USD 500 por iniciativa. Se seleccionarán 3 iniciativas por país
+  (Guatemala, Costa Rica y Panamá), para un total de 9 iniciativas regionales
+  apoyadas. Además, las iniciativas seleccionadas recibirán acompañamiento
+  técnico ligero (mentorías cortas), seguimiento durante el desarrollo y
+  oportunidad de presentar sus resultados en un demo-day nacional o regional.
+  Los productos finales se publicarán en un repositorio abierto regional.
+criterios: >-
+  * **Relevancia social y uso de datos abiertos (25 puntos)**: Claridad del
+  problema abordado y pertinencia de los datos seleccionados.
+
   * **Enfoque de inclusión (15 puntos)**: Consideración de género, juventudes, discapacidad, territorios excluidos y lenguaje accesible.
+
   * **Viabilidad técnica y claridad de la idea (20 puntos)**: Factibilidad de implementación en corto tiempo con los recursos disponibles.
+
   * **Potencial de impacto o réplica (20 puntos)**: Posibilidad de que la iniciativa genere valor social y sea adaptable en otros contextos.
+
   * **Compromiso con licencias abiertas (10 puntos)**: Disposición a publicar los productos bajo licencias CC BY 4.0 o equivalentes.
+
   * **Coherencia del presupuesto y cronograma (10 puntos)**: Realismo y claridad en la distribución de recursos y actividades.
 date: 2026-02-05T00:00:00.000Z
 link: https://redciudadana.org/
 link2: https://redciudadana.org/
-highlight: true
-sponsors_image: /assets/img/banners/logopnud.png
+sponsors_image: /images/posts/diseño-pnud-sin-gobierno-.png
 tags:
   - Datos Abiertos
   - Innovación Cívica
   - Transparencia
   - Centroamérica
+highlight: true
 ---
 
 ## 1. Antecedentes y justificación
