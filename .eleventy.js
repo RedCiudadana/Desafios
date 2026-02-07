@@ -1,13 +1,10 @@
 const moment = require("moment");
-const MarkdownIt = require('markdown-it');
-const now = new Date();
 const rmj = require('render-markdown-js');
 
 module.exports = function (eleventyConfig) {
 
     eleventyConfig.setTemplateFormats("njk,html,md");
-    
-    eleventyConfig.addPassthroughCopy('src');
+
     eleventyConfig.addPassthroughCopy('assets');
     eleventyConfig.addPassthroughCopy('admin');
     eleventyConfig.addPassthroughCopy('images');

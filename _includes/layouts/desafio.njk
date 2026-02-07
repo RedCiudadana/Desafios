@@ -461,17 +461,8 @@
 <script type="module">
     import { supabase } from '/assets/js/supabase-client.js';
 
-    console.log('Supabase client loaded:', supabase ? 'Yes' : 'No');
-    console.log('Supabase config:', window.SUPABASE_CONFIG);
-
-    if (!supabase) {
-        console.error('Supabase client is not initialized!');
-    }
-
     async function handleRegistrationSubmit(formData) {
         try {
-            console.log('Submitting registration with data:', formData);
-
             const { data, error } = await supabase
                 .from('challenge_registrations')
                 .insert([{
@@ -497,7 +488,6 @@
                 throw new Error(error.message || 'Error al enviar la inscripción');
             }
 
-            console.log('Registration successful:', data);
             document.getElementById('registration-success').style.display = 'block';
             document.getElementById('registration-form-element').style.display = 'none';
 

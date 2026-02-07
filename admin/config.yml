@@ -7,7 +7,7 @@ media_folder: "images/posts" # Media files will be stored in the repo under src/
 public_folder: "/images/posts" # The src attribute for uploaded media will begin with assets/images/posts
 
 collections:
-  - name: "deasafios" # Used in routes, e.g., /admin/collections/blog
+  - name: "desafios" # Used in routes, e.g., /admin/collections/desafios
     label: "Desafíos" # Used in the UI
     folder: "src/desafios" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection

@@ -240,6 +240,13 @@ permalink: /admin/registrations/
         });
     }
 
+    function escapeHtml(str) {
+        if (!str) return '-';
+        const div = document.createElement('div');
+        div.textContent = String(str);
+        return div.innerHTML;
+    }
+
     function displayRegistrations(registrations) {
         const tbody = document.getElementById('registrations-tbody');
         tbody.innerHTML = '';
@@ -249,14 +256,14 @@ permalink: /admin/registrations/
             const date = new Date(reg.created_at).toLocaleDateString('es-GT');
 
             row.innerHTML = `
-                <td>${date}</td>
-                <td><strong>${reg.name}</strong></td>
-                <td>${reg.email}</td>
-                <td>${reg.phone}</td>
-                <td><span class="badge badge-primary">${reg.participant_type}</span></td>
-                <td>${reg.location}</td>
-                <td>${reg.challenge_name}</td>
-                <td>${reg.organization || '-'}</td>
+                <td>${escapeHtml(date)}</td>
+                <td><strong>${escapeHtml(reg.name)}</strong></td>
+                <td>${escapeHtml(reg.email)}</td>
+                <td>${escapeHtml(reg.phone)}</td>
+                <td><span class="badge badge-primary">${escapeHtml(reg.participant_type)}</span></td>
+                <td>${escapeHtml(reg.location)}</td>
+                <td>${escapeHtml(reg.challenge_name)}</td>
+                <td>${escapeHtml(reg.organization)}</td>
             `;
             tbody.appendChild(row);
         });
