@@ -28,7 +28,7 @@ stage1_videos:
   - url: https://www.youtube.com/embed/gU6sa65YEeM
     title: "Propuesta 4: Análisis Predictivo para Servicios Públicos"
 title: "Desafío 3: IA para el Desarrollo Local"
-image: /images/posts/dc.png
+image: /images/posts/plantilla_covers-blogs-red-ciudadana-11-.jpg
 description: La transformación digital representa una oportunidad única para
   mejorar la prestación de servicios públicos, cerrar brechas de desigualdad y
   promover la inclusión en Guatemala. Este desafío busca **fomentar la creación
