@@ -278,12 +278,6 @@ description: >-
   La evaluación priorizará impacto y pertinencia sobre complejidad tecnológica
 
 
-  **🔔 ¿Te animas a participar?**
-
-
-  Enlace: <https://bit.ly/DesafioIALocal>
-
-
   <!--EndFragment-->
 objetivos: >-
   * **Generar innovación aplicada**: Impulsar la creación de prototipos y
