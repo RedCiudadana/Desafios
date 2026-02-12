@@ -39,8 +39,8 @@ criterios: >-
 
   * **Coherencia del presupuesto y cronograma (10 puntos)**: Realismo y claridad en la distribución de recursos y actividades.
 date: 2026-02-05T00:00:00.000Z
-link: https://redciudadana.org/
-link2: https://redciudadana.org/
+link: https://bit.ly/MinigrantsCentroamerica2026
+link2: https://bit.ly/MinigrantsCentroamerica2026
 sponsors_image: /images/posts/diseño-pnud-sin-gobierno-.png
 tags:
   - Datos Abiertos
