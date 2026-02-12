@@ -12,10 +12,12 @@
     width: 100%;
     overflow: hidden;
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
 }
 
 .challenge-detail-image {
-    width: 100%;
+    width: 50%;
     height: auto;
     display: block;
     border-radius: 8px;
@@ -500,6 +502,10 @@
         font-size: 20px;
     }
 
+    .challenge-detail-image {
+        width: 80%;
+    }
+
     .participant-types {
         grid-template-columns: 1fr;
     }
@@ -549,6 +555,10 @@
 
     .section-subtitle {
         font-size: 18px;
+    }
+
+    .challenge-detail-image {
+        width: 100%;
     }
 
     .registration-card {
