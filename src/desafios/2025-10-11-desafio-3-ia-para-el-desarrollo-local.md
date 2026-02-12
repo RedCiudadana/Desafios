@@ -95,48 +95,6 @@ description: >-
   Buscamos **prototipos funcionales con impacto real**.
 
 
-  **🧠 Los 2 retos estratégicos**
-
-
-  Los equipos deberán postular su solución a uno de estos retos:
-
-
-  **🔹 Reto 1: IA para la gestión administrativa de emprendimientos**
-
-
-  Imagina:
-
-
-  * Un asistente digital que ayude a calcular precios y ganancias.
-
-  * Un chatbot que registre ingresos y gastos.
-
-  * Una herramienta que genere recomendaciones para mejorar ventas.
-
-  * Un sistema que ayude a crear catálogos y descripciones de productos.
-
-  * IA que apoye campañas de promoción y comunicación.
-
-
-  El objetivo es que los emprendimientos pasen de una gestión reactiva a una gestión planificada, informada y sostenible.
-
-
-  **🔹 Reto 2: IA para formalización y servicios municipales**
-
-
-  Imagina:
-
-
-  * Un asistente virtual que explique trámites paso a paso.
-
-  * Guías personalizadas según tipo de emprendimiento.
-
-  * Orientación automática sobre requisitos, tiempos y costos.
-
-  * Sistemas que mejoren la relación municipio–ciudadanía.
-
-
-  Queremos reducir barreras, simplificar procesos y fortalecer la confianza.
 
 
   **🛠 ¿Cómo funciona el desafío?**
@@ -256,58 +214,70 @@ description: >-
   El objetivo no es solo premiar, sino impulsar soluciones con potencial real de implementación.
 
 
-  **¿Cómo se evaluará?**
-
-
-  Los criterios incluyen:
-
-
-  * Impacto económico potencial (30%)
-
-  * Pertinencia para emprendimientos y servicios públicos (20%)
-
-  * Usabilidad (15%)
-
-  * Uso responsable de IA (15%)
-
-  * Viabilidad (10%)
-
-  * Enfoque inclusivo (10%)
-
-
-  La evaluación priorizará impacto y pertinencia sobre complejidad tecnológica
 
 
   <!--EndFragment-->
 objetivos: >-
-  * **Generar innovación aplicada**: Impulsar la creación de prototipos y
-  herramientas que usen IA para resolver problemas concretos en áreas como
-  educación, salud, medio ambiente, gestión de trámites y participación
-  ciudadana.
+  **🧠 Los 2 retos estratégicos**
 
-  * **Promover inclusión digital**: Garantizar la participación activa de mujeres, jóvenes y pueblos indígenas en la cocreación tecnológica.
 
-  * **Fortalecer capacidades locales**: Facilitar procesos de transferencia de conocimientos y mentoría técnica para gobiernos municipales, organizaciones comunitarias y ciudadanía interesada.
+  Los equipos deberán postular su solución a uno de estos retos:
 
-  * **Impulsar ecosistemas colaborativos**: Crear un espacio donde interactúen sociedad civil, instituciones públicas y sector privado, generando alianzas para la sostenibilidad de las soluciones.
 
-  * **Garantizar un enfoque ético**: Promover el uso responsable de la IA, priorizando la protección de datos personales, la transparencia algorítmica y el respeto a la diversidad cultural y lingüística.
+  **🔹 Reto 1: IA para la gestión administrativa de emprendimientos**
+
+
+  Imagina:
+
+
+  * Un asistente digital que ayude a calcular precios y ganancias.
+
+  * Un chatbot que registre ingresos y gastos.
+
+  * Una herramienta que genere recomendaciones para mejorar ventas.
+
+  * Un sistema que ayude a crear catálogos y descripciones de productos.
+
+  * IA que apoye campañas de promoción y comunicación.
+
+
+  El objetivo es que los emprendimientos pasen de una gestión reactiva a una gestión planificada, informada y sostenible.
+
+
+  **🔹 Reto 2: IA para formalización y servicios municipales**
+
+
+  Imagina:
+
+
+  * Un asistente virtual que explique trámites paso a paso.
+
+  * Guías personalizadas según tipo de emprendimiento.
+
+  * Orientación automática sobre requisitos, tiempos y costos.
+
+  * Sistemas que mejoren la relación municipio–ciudadanía.
+
+
+  Queremos reducir barreras, simplificar procesos y fortalecer la confianza.
 premio: Reconocimiento a los tres mejores equipos, mentoría extendida y
   acompañamiento técnico para implementación piloto, premios en especie (equipos
   tecnológicos, software, capacitaciones), visibilidad en plataformas de PNUD y
   aliados estratégicos, e inclusión de las soluciones en el Toolkit del Desafío
   para facilitar su escalabilidad y replicabilidad.
-criterios: >-
-  * **Innovación y creatividad (25%)**: Uso novedoso de IA para atender un
-  problema local.
+criterios: |-
+  **¿Cómo se evaluará?**
 
-  * **Impacto potencial (25%)**: Beneficio claro para ciudadanía y gobiernos locales.
+  Los criterios incluyen:
 
-  * **Inclusión y derechos digitales (20%)**: Participación de mujeres, jóvenes e indígenas; protección de datos y ética.
+  * Impacto económico potencial (30%)
+  * Pertinencia para emprendimientos y servicios públicos (20%)
+  * Usabilidad (15%)
+  * Uso responsable de IA (15%)
+  * Viabilidad (10%)
+  * Enfoque inclusivo (10%)
 
-  * **Viabilidad técnica y sostenibilidad (20%)**: Factibilidad de implementación y posibilidad de escalabilidad.
-
-  * **Calidad de la presentación (10%)**: Claridad, narrativa y capacidad de persuasión en el pitch.
+  La evaluación priorizará impacto y pertinencia sobre complejidad tecnológica
 date: 2026-03-19T00:00:00.000Z
 link: https://redciudadana.org/
 link2: https://redciudadana.org/
