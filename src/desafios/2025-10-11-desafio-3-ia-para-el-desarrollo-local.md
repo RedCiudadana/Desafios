@@ -1,32 +1,4 @@
 ---
-stage4_videos:
-  - url: https://www.youtube.com/embed/gU6sa65YEeM
-    title: "Ceremonia de Premiación: IA para el Desarrollo Local 2025"
-  - url: https://www.youtube.com/embed/gU6sa65YEeM
-    title: Lanzamiento del Toolkit de Experiencias del Desafío
-stage3_videos:
-  - url: https://www.youtube.com/embed/gU6sa65YEeM
-    title: "Presentación Final: Equipo TechLocal"
-  - url: https://www.youtube.com/embed/gU6sa65YEeM
-    title: "Presentación Final: Equipo InovaMuni"
-  - url: https://www.youtube.com/embed/gU6sa65YEeM
-    title: "Presentación Final: Equipo IA Comunitaria"
-stage2_videos:
-  - url: https://www.youtube.com/embed/gU6sa65YEeM
-    title: "Mentoría: Casos de Uso de IA en Gobiernos Locales"
-  - url: https://www.youtube.com/embed/gU6sa65YEeM
-    title: "Mentoría: Diseño Inclusivo y Ético de Soluciones"
-  - url: https://www.youtube.com/embed/gU6sa65YEeM
-    title: "Mentoría: Protección de Datos y Transparencia Algorítmica"
-stage1_videos:
-  - url: https://www.youtube.com/embed/gU6sa65YEeM
-    title: "Propuesta 1: Chatbot Municipal Inclusivo"
-  - url: https://www.youtube.com/embed/gU6sa65YEeM
-    title: "Propuesta 2: IA para Gestión Ambiental"
-  - url: https://www.youtube.com/embed/gU6sa65YEeM
-    title: "Propuesta 3: Asistente Virtual de Salud Comunitaria"
-  - url: https://www.youtube.com/embed/gU6sa65YEeM
-    title: "Propuesta 4: Análisis Predictivo para Servicios Públicos"
 title: "Desafío 3: IA para el Desarrollo Local"
 image: /images/posts/plantilla_covers-blogs-red-ciudadana-11-.jpg
 description: >-
