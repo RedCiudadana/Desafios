@@ -104,15 +104,19 @@ description: >-
   Fases obligatorias:
 
 
-  1. Lanzamiento del desafío
+  1. Lanzamiento del desafío - 23 de Febrero 2026
 
-  2. Sesión de inspiración técnica
+  2. Sesión de inspiración técnica - 25 de Febrero 2026
 
-  3. Desarrollo y prototipado
+  3. Desarrollo y prototipado - 4 de Marzo 2026
 
-  4. Mentorías
+  4. Mentorías - 11 de Marzo 2026
 
-  5. Demo Day y cierre
+  5. Cierre para presentación de propuestas - 15 de marzo
+
+  6. Presentación Final y Selección de ganadores - 18 de Marzo
+
+  7. Demo Day y cierre - 23 de Marzo de 2026
 
 
   La participación en todas las fases es obligatoria.
