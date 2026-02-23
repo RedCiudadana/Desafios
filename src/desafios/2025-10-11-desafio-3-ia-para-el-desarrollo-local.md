@@ -293,7 +293,7 @@ criterios: |-
   La evaluación priorizará impacto real y viabilidad por encima de complejidad técnica.
 date: 2026-03-19T00:00:00.000Z
 link: https://redciudadana.org/
-link2: https://redciudadana.org/
+link2: https://docs.google.com/document/d/1hieaUhavBcbClb9MILrwZAVXc-_2SCaQ/edit?usp=sharing&ouid=102614004827171520067&rtpof=true&sd=true
 sponsors_image: /images/posts/diseño-pnud-sin-gobierno-.png
 tags:
   - Inteligencia Artificial
