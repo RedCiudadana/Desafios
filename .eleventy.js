@@ -5,9 +5,13 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.setTemplateFormats("njk,html,md");
 
-    eleventyConfig.addPassthroughCopy('assets');
-    eleventyConfig.addPassthroughCopy('admin');
-    eleventyConfig.addPassthroughCopy('images');
+    eleventyConfig.addPassthroughCopy('assets', { expand: true });
+    eleventyConfig.addPassthroughCopy('admin', { expand: true });
+    eleventyConfig.addPassthroughCopy('images', { expand: true });
+
+    eleventyConfig.setServerOptions({
+        watch: ['assets/**/*', 'admin/**/*', 'images/**/*']
+    });
 
     eleventyConfig.addNunjucksFilter("rmj", function(content) {
         return rmj(content);
