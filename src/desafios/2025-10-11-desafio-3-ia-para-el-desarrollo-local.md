@@ -2,139 +2,166 @@
 title: "Desafío 3: IA para el Desarrollo Local"
 image: /images/posts/PLANTILLAS_WEBINAR_Y_CURSO_DE_PROTECCIÓN_DE_DATOS_(3).jpg
 description: >-
-  <!--StartFragment-->
+  **Acerca del Desafío**
 
 
-  **Innovación abierta para fortalecer el emprendimiento y los servicios municipales**
+  **Innovación abierta para fortalecer el emprendimiento local y los servicios municipales**
 
 
-  La inteligencia artificial está transformando el mundo. Pero su verdadero potencial no está únicamente en la sofisticación tecnológica, sino en su capacidad de resolver problemas reales, reducir brechas y generar oportunidades concretas para las personas.
+  La inteligencia artificial (IA) se ha consolidado como una herramienta con alto potencial para mejorar procesos, apoyar la toma de decisiones y ampliar el acceso a servicios. Sin embargo, en contextos municipales como los de Guatemala, su verdadero valor no radica en la sofisticación tecnológica, sino en su capacidad de resolver problemas concretos, reducir brechas y generar oportunidades económicas reales para la población.
 
 
-  Hoy, esa oportunidad llega a Quetzaltenango.
+  En este contexto, Red Ciudadana, lanza el desafío IA. Esta iniciativa se desarrolla en el marco del programa conjunto: "Habilitando la transformación digital y mejorando la prestación de servicios públicos a gran escala en Guatemala", financiado por la Unión Europea y el Joint SDG Fund, implementado por el Programa de Naciones Unidas para el Desarrollo (PNUD).
 
 
-  Desde **Red Ciudadana**, en colaboración con el **Programa de las Naciones Unidas para el Desarrollo (PNUD)**, en el marco del Programa Conjunto de Transformación Digital financiado por el Joint SDG Fund y la Unión Europea, lanzamos el desafío:
+  **💡 "IA para el Desarrollo Local"**
 
 
-  **💡 “IA para el Desarrollo Local**
-
-
-  Un desafio de innovación abierta para diseñar y prototipar soluciones prácticas basadas en inteligencia artificial que impulsen el emprendimiento local y mejoren los servicios municipales.
-
-
-  📌 Este desafío se desarrolla bajo los Términos y Reglas oficiales del programa.
+  Un proceso de innovación pública abierta orientado al diseño y prototipado de soluciones prácticas de inteligencia artificial, concebidas como Bienes Públicos Digitales reutilizables y escalables.
 
 
   **🌎 ¿Por qué este desafío?**
 
 
-  En Quetzaltenango —como en muchos municipios del país— miles de micro y pequeños emprendimientos, muchos liderados por mujeres y jóvenes, enfrentan retos diarios:
+  En los municipios de Guatemala, miles de micro y pequeños emprendimientos, muchos liderados por mujeres y jóvenes, enfrentan desafíos estructurales:
 
 
-  * No tienen claridad sobre sus costos reales.
+  * Falta de claridad sobre costos reales y rentabilidad.
 
-  * No saben con certeza si están obteniendo ganancias o pérdidas.
+  * Gestión intuitiva sin registro sistemático de datos.
 
-  * No cuentan con herramientas digitales accesibles para gestionar su negocio.
+  * Dificultades para diseñar campañas de promoción.
 
-  * Encuentran procesos municipales poco claros para formalizarse.
+  * Bajo acceso a herramientas digitales simples y asequibles.
 
-
-  Al mismo tiempo, la ciudadanía percibe los trámites como complejos, dispersos y difíciles de entender.
-
-
-  La inteligencia artificial puede convertirse en una aliada estratégica para cambiar esta realidad. Pero necesitamos soluciones diseñadas desde el territorio, con enfoque inclusivo, abierto y responsable.
+  * Desconocimiento sobre trámites y procesos de formalización.
 
 
-  **🎯 ¿Cuál es el objetivo?**
+  Al mismo tiempo, la ciudadanía percibe los servicios municipales como complejos, poco claros y fragmentados.
 
 
-  El desafío busca:
+  La inteligencia artificial puede convertirse en una aliada estratégica para cambiar esta realidad. Pero las soluciones deben ser:
 
 
-  ✔ Diseñar y prototipar soluciones abiertas de IA.\
-
-  ✔ Fortalecer oportunidades económicas locales.\
-
-  ✔ Mejorar la experiencia ciudadana con los servicios municipales.\
-
-  ✔ Promover bienes públicos digitales reutilizables y escalables.
+  ✔ Diseñadas desde el territorio ✔ Abiertas y reutilizables ✔ Éticas y responsables ✔ Centradas en las personas
 
 
-  No buscamos proyectos teóricos.\
-
-  Buscamos **prototipos funcionales con impacto real**.
+  **🎯 Objetivo del Desafío**
 
 
+  **Objetivo General**
 
 
-  **🛠 ¿Cómo funciona el desafío?**
+  Identificar, diseñar y prototipar soluciones abiertas de inteligencia artificial que contribuyan a:
 
 
-  Se desarrollará como un desafio **de Innovación Abierta**, entre el **11 de febrero y el 26 de marzo**, con fases obligatorias:
+  * Mejorar las oportunidades de emprendimientos locales.
+
+  * Fortalecer la provisión de servicios municipales más eficientes, accesibles y centrados en las personas.
 
 
-  * Lanzamiento - 11 de Febrero
-
-  * Sesión de inspiración técnica - 18 de Febrero
-
-  * Desarrollo y prototipado - 25 de Febrero
-
-  * Mentorías - 11 al 25 de Febrero
-
-  * Demo Day final - 18 de Marzo
+  **Objetivos Específicos**
 
 
-  Cada equipo deberá:
+  * Impulsar el uso práctico y responsable de la IA.
+
+  * Fortalecer capacidades en innovación abierta.
+
+  * Desarrollar prototipos funcionales con potencial de piloto.
+
+  * Facilitar la reutilización y escalamiento en otros municipios.
 
 
-  * Presentar un prototipo funcional.
-
-  * Publicar su código en repositorio abierto.
-
-  * Entregar documentación clara.
-
-  * Realizar al menos una prueba con usuarios reales.
+  No buscamos proyectos conceptuales. Buscamos prototipos funcionales con impacto real.
 
 
-  Porque la innovación pública debe probarse en la realidad.
+  **🧪 Enfoque Metodológico**
 
 
-  **Principios clave del desafío**
+  El desafío se desarrollará como un Sprint de Innovación Abierta, de corta duración e intensidad alta, priorizando resultados tangibles sobre desarrollos conceptuales.
 
 
-  Este no es un concurso tradicional. Es una apuesta por la innovación ética y abierta.
+  El proceso combina:
+
+
+  * Diseño centrado en las personas.
+
+  * Prototipado rápido.
+
+  * Mentoría técnica y metodológica.
+
+  * Evaluación basada en impacto real.
+
+  * Al menos una ronda de prueba con usuarios finales.
+
+
+  **📅 Duración y Fases**
+
+
+  Período de implementación: 🗓 23 de febrero – 23 de marzo
+
+
+  Fases obligatorias:
+
+
+  1. Lanzamiento del desafío
+
+  2. Sesión de inspiración técnica
+
+  3. Desarrollo y prototipado
+
+  4. Mentorías
+
+  5. Demo Day y cierre
+
+
+  La participación en todas las fases es obligatoria.
+
+
+  **📦 Entregables obligatorios**
+
+
+  Cada equipo deberá presentar:
+
+
+  * Repositorio de código abierto (GitHub, GitLab u otro) con:
+      * Código fuente
+      * Documentación básica
+      * Licencia abierta explícita
+
+  * Documento de propuesta (máx. 5 páginas)
+
+  * Prototipo funcional, demo o simulación
+
+  * Pitch final (máx. 5 minutos)
+
+  * Evidencia de prueba con usuarios y aprendizajes documentados
+
+
+  **🔓 Principios obligatorios**
+
+
+  Este desafío no es un concurso tradicional. Es una apuesta por la innovación ética y abierta.
 
 
   Todas las soluciones deberán cumplir con:
 
 
-  * 🔓 Código abierto por defecto
-
-  * 📄 Licencias abiertas
-
-  * 🛡 Protección de datos personales
-
-  * ⚖ Transparencia algorítmica
-
-  * 🤝 Enfoque inclusivo y no discriminación
-
-  * ♻ Reutilización y escalabilidad
+  🔓 Código abierto por defecto 📄 Licencias abiertas (MIT, Apache 2.0, GPL v3, CC BY 4.0 o CC BY-SA 4.0) 🛡 Protección de datos personales ⚖ Transparencia algorítmica 🤝 Enfoque inclusivo y no discriminación ♻ Reutilización y escalabilidad 🧭 Principio de "Do No Harm"
 
 
-  La sofisticación técnica **no será el criterio principal**.\
-
-  El impacto práctico sí.
+  La sofisticación técnica no será el criterio principal. El impacto práctico sí.
 
 
   **👥 ¿Quiénes pueden participar?**
 
 
-  Pueden participar equipos de 1 a 6 integrantes conformados por:
+  Equipos de 1 a 6 integrantes conformados por:
 
 
   * Organizaciones de sociedad civil
+
+  * Colectivos comunitarios o académicos
 
   * Emprendedores y emprendedoras
 
@@ -142,114 +169,124 @@ description: >-
 
   * Profesionales independientes
 
-  * Colectivos comunitarios
-
-  * Funcionarios municipales
+  * Funcionarios municipales (sin rol evaluador)
 
 
-  La convocatoria está abierta a personas de cualquier parte del país —e incluso del extranjero— aunque el foco territorial será Quetzaltenango.
+  La convocatoria está abierta a participantes de cualquier parte del país e incluso del extranjero.
 
 
-  La diversidad es bienvenida.\
-
-  Los equipos multidisciplinarios son altamente valorados.
+  La diversidad y multidisciplinariedad son altamente valoradas.
 
 
-  **🏆 ¿Qué recibirán los equipos ganadores?**
+  **🏆 Incentivos**
 
 
-  Se seleccionarán hasta **tres propuestas ganadoras**.
+  Se seleccionarán hasta tres propuestas ganadoras.
 
 
-  Incentivos:
+  💰 Incentivos económicos:
 
 
-  🥇 Primer lugar: Q 5,000\
-
-  🥈 Segundo lugar: Q 3,000\
-
-  🥉 Tercer lugar: Q 2,000
+  🥇 Primer lugar: Q 5,000 🥈 Segundo lugar: Q 3,000 🥉 Tercer lugar: Q 2,000
 
 
-  Además de:
+  Además:
 
 
-  * Visibilidad institucional.
+  * Visibilidad institucional
 
-  * Acompañamiento técnico.
+  * Acompañamiento técnico
 
-  * Posibilidad de exploración de piloto.
+  * Posibilidad de articulación para piloto o escalamiento
 
-  * Articulación con actores locales.
-
-
-  El objetivo no es solo premiar, sino impulsar soluciones con potencial real de implementación.
+  * Publicación como Bien Público Digital
 
 
+  El objetivo no es solo premiar, sino activar soluciones con potencial real de implementación y reutilización.
 
 
-  <!--EndFragment-->
+  **🌍 Impacto más allá del desafío**
+
+
+  Una vez finalizado el Sprint, las soluciones podrán transitar hacia:
+
+
+  * Socialización con actores municipales.
+
+  * Identificación de pilotos.
+
+  * Ajustes técnicos derivados de retroalimentación.
+
+  * Publicación y documentación como Bienes Públicos Digitales.
+
+
+  La participación no garantiza implementación inmediata, pero las soluciones con mayor impacto podrán ser consideradas para procesos posteriores de pilotaje o escalamiento.
 objetivos: >-
-  **🧠 Los 2 retos estratégicos**
+  **🚀 Retos Estratégicos**
 
 
-  Los equipos deberán postular su solución a uno de estos retos:
+  Los equipos deberán postular su solución a uno (1) de los siguientes retos:
 
 
-  **🔹 Reto 1: IA para la gestión administrativa de emprendimientos**
+  **🔹 Reto 1: IA para la gestión administrativa de emprendimientos y economía local**
 
 
-  Imagina:
+  Enfocado en desarrollar soluciones que permitan:
 
 
-  * Un asistente digital que ayude a calcular precios y ganancias.
+  * Claridad sobre ingresos, costos y rentabilidad.
 
-  * Un chatbot que registre ingresos y gastos.
+  * Registro simple de ventas y gastos.
 
-  * Una herramienta que genere recomendaciones para mejorar ventas.
+  * Recomendaciones automatizadas basadas en datos.
 
-  * Un sistema que ayude a crear catálogos y descripciones de productos.
+  * Asistentes digitales de gestión.
 
-  * IA que apoye campañas de promoción y comunicación.
+  * Herramientas para definición de precios.
 
+  * Sistemas de respuesta automática a clientes.
 
-  El objetivo es que los emprendimientos pasen de una gestión reactiva a una gestión planificada, informada y sostenible.
+  * Diseño de campañas de comunicación y promoción.
 
-
-  **🔹 Reto 2: IA para formalización y servicios municipales**
-
-
-  Imagina:
+  * Creación de catálogos y descripciones de productos.
 
 
-  * Un asistente virtual que explique trámites paso a paso.
-
-  * Guías personalizadas según tipo de emprendimiento.
-
-  * Orientación automática sobre requisitos, tiempos y costos.
-
-  * Sistemas que mejoren la relación municipio–ciudadanía.
+  Se valorará positivamente la reutilización o adaptación de Bienes Públicos Digitales existentes (chatbots, CRMs ligeros, asistentes virtuales, motores abiertos, etc.).
 
 
-  Queremos reducir barreras, simplificar procesos y fortalecer la confianza.
+  **🔹 Reto 2: IA para la formalización, atención ciudadana y servicios municipales**
+
+
+  Enfocado en soluciones que:
+
+
+  * Expliquen trámites paso a paso.
+
+  * Orienten sobre requisitos, tiempos y costos.
+
+  * Ofrezcan guías personalizadas según tipo de emprendimiento.
+
+  * Reduzcan barreras de acceso a servicios municipales.
+
+  * Mejoren la relación municipio–ciudadanía.
 premio: Reconocimiento a los tres mejores equipos, mentoría extendida y
   acompañamiento técnico para implementación piloto, premios en especie (equipos
   tecnológicos, software, capacitaciones), visibilidad en plataformas de PNUD y
   aliados estratégicos, e inclusión de las soluciones en el Toolkit del Desafío
   para facilitar su escalabilidad y replicabilidad.
 criterios: |-
-  **¿Cómo se evaluará?**
+  **📊 Criterios de Evaluación**
 
-  Los criterios incluyen:
+  | Criterio | Ponderación |
+  |----------|-------------|
+  | Impacto económico potencial | 30% |
+  | Pertinencia contextual | 20% |
+  | Usabilidad y adopción | 15% |
+  | Uso responsable de IA | 15% |
+  | Viabilidad y sostenibilidad | 10% |
+  | Enfoque de inclusión | 10% |
 
-  * Impacto económico potencial (30%)
-  * Pertinencia para emprendimientos y servicios públicos (20%)
-  * Usabilidad (15%)
-  * Uso responsable de IA (15%)
-  * Viabilidad (10%)
-  * Enfoque inclusivo (10%)
-
-  La evaluación priorizará impacto y pertinencia sobre complejidad tecnológica
+  La evaluación priorizará impacto real y viabilidad por encima de complejidad técnica.
 date: 2026-03-19T00:00:00.000Z
 link: https://redciudadana.org/
 link2: https://redciudadana.org/
