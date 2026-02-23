@@ -1,6 +1,6 @@
 ---
 title: "Desafío 3: IA para el Desarrollo Local"
-image: /images/posts/PLANTILLAS_WEBINAR_Y_CURSO_DE_PROTECCIÓN_DE_DATOS_(3).jpg
+image: /images/posts/desafio-3-ai.jpg
 description: >-
   **Acerca del Desafío**
 
