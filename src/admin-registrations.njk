@@ -128,12 +128,13 @@ permalink: /admin/registrations/
                     <option value="">Todos los desafíos</option>
                 </select>
                 <select id="filter-type" class="form-control">
-                    <option value="">Todos los tipos</option>
-                    <option value="estudiante">Estudiante</option>
-                    <option value="profesional">Profesional / Tecnólogo</option>
-                    <option value="osc">OSC</option>
-                    <option value="ciudadano">Ciudadano/a</option>
-                    <option value="otro">Otro</option>
+                    <option value="">Todos los rangos de edad</option>
+                    <option value="menos-13">Menos de 13 años</option>
+                    <option value="13-17">13-17</option>
+                    <option value="18-24">18-24</option>
+                    <option value="25-44">25-44</option>
+                    <option value="45-64">45-64</option>
+                    <option value="65-mas">65 o más</option>
                 </select>
                 <input type="text" id="search-input" class="form-control" placeholder="Buscar por nombre o email...">
             </div>
@@ -152,8 +153,8 @@ permalink: /admin/registrations/
                         <th>Nombre</th>
                         <th>Email</th>
                         <th>Teléfono</th>
-                        <th>Tipo</th>
-                        <th>Ubicación</th>
+                        <th>Edad</th>
+                        <th>Municipio</th>
                         <th>Desafío</th>
                         <th>Organización</th>
                     </tr>
@@ -260,8 +261,8 @@ permalink: /admin/registrations/
                 <td><strong>${escapeHtml(reg.name)}</strong></td>
                 <td>${escapeHtml(reg.email)}</td>
                 <td>${escapeHtml(reg.phone)}</td>
-                <td><span class="badge badge-primary">${escapeHtml(reg.participant_type)}</span></td>
-                <td>${escapeHtml(reg.location)}</td>
+                <td><span class="badge badge-primary">${escapeHtml(reg.age_range)}</span></td>
+                <td>${escapeHtml(reg.municipality)}</td>
                 <td>${escapeHtml(reg.challenge_name)}</td>
                 <td>${escapeHtml(reg.organization)}</td>
             `;
@@ -276,7 +277,7 @@ permalink: /admin/registrations/
 
         const filtered = allRegistrations.filter(reg => {
             const matchesChallenge = !challengeFilter || reg.challenge_name === challengeFilter;
-            const matchesType = !typeFilter || reg.participant_type === typeFilter;
+            const matchesType = !typeFilter || reg.age_range === typeFilter;
             const matchesSearch = !searchQuery ||
                 reg.name.toLowerCase().includes(searchQuery) ||
                 reg.email.toLowerCase().includes(searchQuery);
